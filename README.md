@@ -1,4 +1,5 @@
 # Tarea 2 Logaritmos
 
-* Nada de pelear por lenguajes, haremos C otra vez xD
+* Escrito en C (otra vez)
+* Algoritmo de Ukkonen?
 
