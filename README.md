@@ -1,4 +1,5 @@
 # Tarea 2 Logaritmos
 
-* Nada de pelear por lenguajes, haremos C otra vez xD
-
+* Escrito en Java (total, no necesitamos manejo de memoria (?))
+* Algoritmo de Ukkonen
+* Necesitamos alguien que entienda el enunciado xD
