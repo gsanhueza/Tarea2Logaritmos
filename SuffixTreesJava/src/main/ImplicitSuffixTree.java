@@ -7,6 +7,13 @@ public class ImplicitSuffixTree {
 	public ImplicitSuffixTree(String receivedString) {
 		this.receivedString = receivedString;
 	}
+	
+	public ImplicitSuffixTree createImplicitSuffixTree() {
+		this.removeSymbol("$");
+		this.removeUnlabeledEdges();
+		this.removeLessThan2SonsNodes();
+		return this;
+	}
 
 	/**
 	 * Remueve las instancias del símbolo terminal.
