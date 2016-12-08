@@ -1,7 +1,7 @@
 package main;
 
 public class SuffixTree {
-
+	State root;
 	private String text;
 
 	public SuffixTree(String receivedText) {
@@ -9,12 +9,13 @@ public class SuffixTree {
 	}
 
 	public SuffixTree createSuffixTree() {
-		State root;
 		State bottom;
 		State s;
 		int k = 0;
 		Pair s_v;
 
+		root = new State();
+		bottom = new State();
 		for (int  i = 0; i < text.length(); i++ ){
 			bottom.addTransition( i, i, root );
 		}
@@ -26,6 +27,15 @@ public class SuffixTree {
 			s_v = canonize( s, k, i);
 		}
 		return s_v.getState();
+	}
+
+	public Pair upDate(State s, int k, int i){
+		State oldr = root;
+		Pair end_r = test_and_split(s, k , i-1, text.charAt(i));
+		State end = end_r.getState();
+		int r = end_r; 
+		while(!end_r.)
+
 	}
 
 
