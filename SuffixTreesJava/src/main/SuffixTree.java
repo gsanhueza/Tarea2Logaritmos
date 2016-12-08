@@ -14,8 +14,9 @@ public class SuffixTree {
 	}
 
 	public String[] search(String word) {
+		String[] ans = {"a", "b", "c"};
 		System.out.println("Retornamos los resultados de la búsqueda (Y escribimos un archivo con los tiempos).");
-		return null;
+		return ans;
 	}
 
 }
