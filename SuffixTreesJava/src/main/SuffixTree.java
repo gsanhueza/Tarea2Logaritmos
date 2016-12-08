@@ -10,12 +10,13 @@ public class SuffixTree {
 
 	public void createSuffixTree() {
 		System.out.println("Creamos un suffix tree con el texto recibido");
-		
+		// TODO Crear el suffix Tree
 	}
 
 	public String[] search(String word) {
-		System.out.println("Retornamos los resultados de la búsqueda (Y escribimos un archivo con los tiempos).");
-		return null;
+		String[] ans = {"a", "b", "c"};
+		// TODO Retornar lo que corresponde a búsqueda
+		return ans;
 	}
 
 }
