@@ -1,6 +1,7 @@
 package main;
 
 public class ImplicitSuffixTree {
+	// FIXME Esta clase puede que esté de sobra!!
 	
 	private String receivedString;
 
