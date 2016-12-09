@@ -13,7 +13,7 @@ public class ImplicitSuffixTree {
 		this.receivedString = receivedString;
 		end = -1;
 		remaining = 0;
-		activeNode = new Node();
+		activeNode = null;
 		activeEdge = -1;
 		activeLength  = 0;
 
@@ -56,15 +56,25 @@ public class ImplicitSuffixTree {
 	}
 
 	public Node runUkkonen() {
+		activeNode = new Node();
 		Node root = activeNode;
 		for (int i = 0; i < receivedString.length(); i++) {
 			remaining++;
-			end = i;
+			end++;
 
 			while (remaining > 0) {
-				/*No existe un camine desde el Nodo en que estamos*/
-				if (activeLength == 0) {
-					activeNode.addChildren(new Node(i,end));
+				/*getPath entrega la variable "start" si es que hay match con el primer caracter de la branch,
+				o -1 si es que no hay*/
+				int path = activeNode.getPath(receivedString.charAt(i));
+				if (path == -1) {
+					activeNode.addChildren(new Node(i, end,receivedString.charAt(i)));
+					remaining--;
+				}
+				else {
+					/*Rule 3*/
+					activeEdge = path;
+					activeLength++;
+					break;
 				}
 
 			}
