@@ -38,10 +38,10 @@ public class Main {
 		/**
 		 * Construimos el SuffixTree
 		 */
-		SuffixTree st = new SuffixTree(processedText);
+		SuffixTree st = new SuffixTree();
 
 		initTime = System.currentTimeMillis();
-		st.createSuffixTree();
+		st.createSuffixTree(processedText);
 		endTime = System.currentTimeMillis();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
@@ -65,10 +65,10 @@ public class Main {
 			logger.log("Palabra buscada: " + word);
 			logger.log("Largo de la palabra: " + wordLength);
 			initTime = System.currentTimeMillis();
-			String ocurrences[] = st.search(word);
+			List<String> ocurrences = st.search(word);
 			endTime = System.currentTimeMillis();
 			logger.log("Tiempo de búsqueda: " + (endTime - initTime));
-			logger.log("Número de ocurrencias: " + ocurrences.length);
+			logger.log("Número de ocurrencias: " + ocurrences.size());
 			logger.log();
 
 		}
