@@ -11,9 +11,12 @@ public class SuffixTree {
 	}
 
 	public SuffixTree createSuffixTree(String text) {
-		for (int i = 1; i <= text.length() - 1; i++) {
+		System.out.println(text);
+		// English.short has 1737 characters
+		
+		for (int i = 0; i < text.length(); i++) {
 			// Phase i
-			for (int j = 1; j <= i + 1; j++) {
+			for (int j = 0; j < i + 1; j++) {
 				// Extension j
 				
 				// Encontrar el final del camino desde raíz de I, correspondiente a S[j...i]
@@ -26,8 +29,8 @@ public class SuffixTree {
 				}
 				
 				// Si es necesario, extender ese camino agregando S[i + 1]
-				if (foundChild == null || !foundChild.getData().contains(text.substring(j, i + 2))) {
-					root.addChildren(new Node().setData(text.substring(i + 1, i + 2)));
+				if (foundChild == null || !foundChild.getData().contains(text.substring(j, i + 1))) {
+					root.addChildren(new Node().setData(text.substring(i, i + 1)));
 				}
 			}
 		}
