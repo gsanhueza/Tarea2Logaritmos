@@ -25,15 +25,9 @@ public class Main {
 		/**
 		 * Recibimos un texto para procesarlo
 		 */
-		String text = null;
 
-		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.50MB")), StandardCharsets.UTF_8);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 
-		String processedText = TextPreprocessor.process(text);
+		String processedText = TextPreprocessor.readFile("/Texts/english.50MB");
 
 		/**
 		 * Construimos el SuffixTree
