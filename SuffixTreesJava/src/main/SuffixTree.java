@@ -20,17 +20,24 @@ public class SuffixTree {
 				Node foundChild = null;
 				for (Node child : root) {
 					if (text.substring(j, i + 1).contains(child.getData())) {
+						System.out.printf("* Text  %s contains child %s, adding edge\n", text.substring(j, i + 1), child.getData());
 						foundChild = child;
+						break;
+					}
+					if (child.getData().contains(text.substring(j, i + 1))) {
+						// (Regla 3)
+						System.out.printf("+ Child %s contains text  %s, skipping\n", child.getData(), text.substring(j, i + 1));
 						break;
 					}
 				}
 				
 				if (foundChild == null) {
-					// El substring no estaba en el suffix tree
+					// El substring no estaba en el suffix tree (Regla 2)
 					System.out.println("Adding to Tree: " + text.substring(i, i + 1));
 					root.addChildren(new Node().setData(text.substring(i, i + 1)));
 				} else {
 					// Uno de los hijos contiene parte del substring buscado (ej: busco "ba" y hay un hijo con "b")
+					// (Regla 1)
 					System.out.print("Modifying child of Tree: " + foundChild.getData() + " --> ");
 					foundChild.setData(foundChild.getData() + text.substring(i, i + 1));
 					System.out.println(foundChild.getData());
