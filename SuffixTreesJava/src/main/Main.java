@@ -32,6 +32,7 @@ public class Main {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		text = "banana";
 
 		String processedText = TextPreprocessor.process(text);
 
@@ -46,7 +47,7 @@ public class Main {
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log();
-
+		
 		/**
 		 * Elegimos N/10 palabras del texto al azar para buscarlas
 		 */

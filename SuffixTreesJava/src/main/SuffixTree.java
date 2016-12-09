@@ -11,9 +11,6 @@ public class SuffixTree {
 	}
 
 	public SuffixTree createSuffixTree(String text) {
-		System.out.println(text);
-		// English.short has 1737 characters
-		
 		for (int i = 0; i < text.length(); i++) {
 			// Phase i
 			for (int j = 0; j < i + 1; j++) {
@@ -28,11 +25,19 @@ public class SuffixTree {
 					}
 				}
 				
-				// Si es necesario, extender ese camino agregando S[i + 1]
-				if (foundChild == null || !foundChild.getData().contains(text.substring(j, i + 1))) {
+				if (foundChild == null) {
+					// El substring no estaba en el suffix tree
+					System.out.println("Adding to Tree: " + text.substring(i, i + 1));
 					root.addChildren(new Node().setData(text.substring(i, i + 1)));
+				} else {
+					// Uno de los hijos contiene parte del substring buscado (ej: busco "ba" y hay un hijo con "b")
+					System.out.print("Modifying child of Tree: " + foundChild.getData() + " --> ");
+					foundChild.setData(foundChild.getData() + text.substring(i, i + 1));
+					System.out.println(foundChild.getData());
 				}
+
 			}
+			System.out.println("");
 		}
 		return this;
 	}
