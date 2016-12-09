@@ -28,10 +28,11 @@ public class Main {
 		String text = null;
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.50MB")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.short")), StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		text = "banana";
 
 		String processedText = TextPreprocessor.process(text);
 
@@ -46,7 +47,7 @@ public class Main {
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log();
-
+		
 		/**
 		 * Elegimos N/10 palabras del texto al azar para buscarlas
 		 */
