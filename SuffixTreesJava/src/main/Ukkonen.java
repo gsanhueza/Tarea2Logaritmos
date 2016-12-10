@@ -4,7 +4,7 @@ package main;
  * Created by belisariops on 12/9/16.
  */
 public class Ukkonen {
-    static int end;
+    private  Last end;
     private int remaining;
     private Node activeNode;
     public int activeEdge;
@@ -14,23 +14,19 @@ public class Ukkonen {
 
     public Ukkonen (String receivedString) {
         this.receivedString = receivedString.toCharArray();
-        end = -1;
+        end = Last.getInstance();
         remaining = 0;
         activeNode = null;
         activeEdge = -1;
         activeLength  = 0;
     }
 
-    public int getPath(char s, Node n,int var) {
-
-        for (Node node : n.children) {
-            if (s == (receivedString[n.getChildren(activeEdge).start + var]))
-                return n.getChildren(activeEdge).start;
-
-        }
-
-
+    public int getPath(char s, Node n) {
+        Node child = activeNode.getChildren(s);
+        if (child!= null)
+            return child.start;
         return -1;
+
     }
 
 
@@ -40,13 +36,13 @@ public class Ukkonen {
         Node root = activeNode;
         for (int i = 0; i < receivedString.length; i++) {
             remaining++;
-            end++;
+            end.increment();;
 
             while (remaining > 0) {
 				/*getPath entrega la variable "start" si es que hay match con el primer caracter de la branch,
 				o -1 si es que no hay*/
                 if (activeLength == 0) {
-                    int path = getPath(receivedString[i],activeNode,0);
+                    int path = getPath(receivedString[i],activeNode);
                     if (path == -1) {
                         activeNode.addChildren(new Node(i),i);
                         remaining--;
@@ -58,26 +54,46 @@ public class Ukkonen {
                     }
                 }
                 else {
-                    Node aux = activeNode.getChildren(activeEdge);
-					/*Caracter en el que estamos parados*/
+                    Node activeLeaf = activeNode.getChildren(activeEdge);
+					/*Es el siguiente caracter del que estamos parados igual a i?*/
                     char c = receivedString[activeNode.getChildren(activeEdge).start + activeLength];
                     if (c == receivedString[i]) {
                         if (suffixLink != null) {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
+                            suffixLink = activeNode.getChildren(receivedString[i]);
+                            activeNode.setLink(root);
                         }
 
-                        if (aux.getLast() - aux.start >= activeLength) {
+                        if (activeLeaf.getLast() - activeLeaf.start >= activeLength) {
                             activeLength++;
+                            break;
                         }
                         else {
-                            activeNode = aux;
-                            activeLength = activeLength - (aux.getLast() - aux.start);
-                            activeEdge = aux.getChildren(receivedString[i]).start;
+                            activeNode = activeLeaf;
+                            activeLength = activeLength - (activeLeaf.getLast() - activeLeaf.start);
+                            activeEdge = activeLeaf.getChildren(receivedString[i]).start;
                         }
 
                     }
-
+                    /*Crear nodo interno*/
                     else {
+                        int x = activeNode.getChildren(activeEdge).start;
+                        Node child1 = new Node(x + activeLength);
+                        Node child2 = new Node(i);
+                        InternalNode internal = new InternalNode(x, x + activeLength -1);
+                        internal.addChildren(child1,child1.start);
+                        internal.addChildren(child2,child2.start);
+                        if (suffixLink == null) {
+                            suffixLink = internal;
+
+                        }
+                        else {
+                            suffixLink.setLink(internal);
+                            suffixLink = internal;
+                        }
+                        internal.setLink(root);
+                        activeNode.addChildren(internal,activeEdge);
+
 
                     }
 
