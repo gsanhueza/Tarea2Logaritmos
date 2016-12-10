@@ -32,7 +32,7 @@ public class Ukkonen {
 
     public Node run() {
         Node suffixLink = null;
-        activeNode = new Node();
+        activeNode = new InternalNode(-1,-1);
         Node root = activeNode;
         for (int i = 0; i < receivedString.length; i++) {
             remaining++;
@@ -44,7 +44,7 @@ public class Ukkonen {
                 if (activeLength == 0) {
                     int path = getPath(receivedString[i],activeNode);
                     if (path == -1) {
-                        activeNode.addChildren(new Node(i),i);
+                        activeNode.addChildren(new Node(receivedString[i]),receivedString[i]);
                         remaining--;
                     } else {
 					/*Rule 3*/
@@ -56,7 +56,7 @@ public class Ukkonen {
                 else {
                     Node activeLeaf = activeNode.getChildren(activeEdge);
 					/*Es el siguiente caracter del que estamos parados igual a i?*/
-                    char c = receivedString[activeNode.getChildren(activeEdge).start + activeLength];
+                    char c = receivedString[activeEdge + activeLength];
                     if (c == receivedString[i]) {
                         if (suffixLink != null) {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
@@ -72,6 +72,7 @@ public class Ukkonen {
                             activeNode = activeLeaf;
                             activeLength = activeLength - (activeLeaf.getLast() - activeLeaf.start);
                             activeEdge = activeLeaf.getChildren(receivedString[i]).start;
+                            break;
                         }
 
                     }
@@ -93,6 +94,12 @@ public class Ukkonen {
                         }
                         internal.setLink(root);
                         activeNode.addChildren(internal,activeEdge);
+                        remaining--;
+                        if (activeNode.equals(root)) {
+                            activeLength--;
+                            activeEdge++;
+                        }
+
 
 
                     }

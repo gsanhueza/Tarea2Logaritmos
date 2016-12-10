@@ -67,16 +67,16 @@ public class ImplicitSuffixTree {
 				/*getPath entrega la variable "start" si es que hay match con el primer caracter de la branch,
 				o -1 si es que no hay*/
 				if (activeLength == 0) {
-					int path = activeNode.getPath(receivedString.charAt(i));
-					if (path == -1) {
-						activeNode.addChildren(new Node(i, end, receivedString.charAt(i)), i);
-						remaining--;
-					} else {
+					//int path = activeNode.getPath(receivedString.charAt(i));
+					//if (path == -1) {
+					//	activeNode.addChildren(new Node(i, end, receivedString.charAt(i)), i);
+					//	remaining--;
+					//} else {
 					/*Rule 3*/
-						activeEdge = path;
-						activeLength++;
-						break;
-					}
+					//	activeEdge = path;
+					//	activeLength++;
+					//	break;
+					//}
 				}
 				else {
 					Node aux = activeNode.getChildren(activeEdge);

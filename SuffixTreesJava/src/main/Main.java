@@ -9,11 +9,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-	static int i =0;
 	public static void main(String[] args) {
-		int x = i;
-		i = 20;
-		System.out.println(i);
+		String input = "banana$";
+		Ukkonen x = new Ukkonen(input);
+		Node root = x.run();
+		System.out.println(root.getChildren('b').start);
 	}
 
 }
