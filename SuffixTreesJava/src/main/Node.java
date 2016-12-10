@@ -1,15 +1,11 @@
 package main;
 
-import java.io.EOFException;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Node {
 	private Node suffixLink;
 	private String suffix;
 	public int start,finish;
 	private boolean isLeaf;
-	private List<Node> children;
+	private Node[] children;
 	public char firstChar;
 
 	
@@ -23,16 +19,19 @@ public class Node {
 		this.finish = finish;
 		firstChar = first;
 		isLeaf = true;
-		children = new ArrayList<Node>();
+		children = new Node[256];
 		}
 
 
 	public int getPath(char s) {
+
 		for (Node node : children) {
 			if (s == (node.firstChar))
 				return start;
 
 		}
+
+
 		return -1;
 	}
 
@@ -44,8 +43,8 @@ public class Node {
 		return suffixLink;
 	}
 
-	public void addChildren(Node node) {
-		children.add(node);
+	public void addChildren(Node node, int i) {
+		children[i] = node;
 		isLeaf = false;
 	}
 
@@ -54,12 +53,7 @@ public class Node {
 	}
 
 	public Node getChildren(int i) {
-		try {
-			return children.get(i);
-		}
-		catch (NullPointerException e) {
-			return null;
-		}
+		return children[i];
 	}
 
 }
