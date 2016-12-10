@@ -3,27 +3,26 @@ package main;
 public class Node {
 	private Node suffixLink;
 	private String suffix;
-	public int start,finish;
+	public int start;
+	private Last last;
 	private boolean isLeaf;
-	private Node[] children;
-	public char firstChar;
+	public Node[] children;
 
 	
 	public Node() {
-		this(-1,-1, '\0');
+		this(-1);
 	}
 
-	public Node(int start, int finish,char first) {
+	public Node(int start) {
 		setLink(null);
 		this.start = start;
-		this.finish = finish;
-		firstChar = first;
+		last = Last.getInstance();
 		isLeaf = true;
 		children = new Node[256];
 		}
 
 
-	public int getPath(char s) {
+/*	public int getPath(char s) {
 
 		for (Node node : children) {
 			if (s == (node.firstChar))
@@ -33,7 +32,7 @@ public class Node {
 
 
 		return -1;
-	}
+	}*/
 
 	public void setLink(Node link) {
 		suffixLink = link;
@@ -54,6 +53,10 @@ public class Node {
 
 	public Node getChildren(int i) {
 		return children[i];
+	}
+
+	public int getLast() {
+		return last.getValue();
 	}
 
 }

@@ -21,6 +21,19 @@ public class Ukkonen {
         activeLength  = 0;
     }
 
+    public int getPath(char s, Node n,int var) {
+
+        for (Node node : n.children) {
+            if (s == (receivedString[n.getChildren(activeEdge).start + var]))
+                return n.getChildren(activeEdge).start;
+
+        }
+
+
+        return -1;
+    }
+
+
     public Node run() {
         Node suffixLink = null;
         activeNode = new Node();
@@ -33,9 +46,9 @@ public class Ukkonen {
 				/*getPath entrega la variable "start" si es que hay match con el primer caracter de la branch,
 				o -1 si es que no hay*/
                 if (activeLength == 0) {
-                    int path = activeNode.getPath(receivedString[i]);
+                    int path = getPath(receivedString[i],activeNode,0);
                     if (path == -1) {
-                        activeNode.addChildren(new Node(i, end, receivedString[i]),i);
+                        activeNode.addChildren(new Node(i),i);
                         remaining--;
                     } else {
 					/*Rule 3*/
@@ -53,12 +66,12 @@ public class Ukkonen {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
                         }
 
-                        if (aux.finish - aux.start >= activeLength) {
+                        if (aux.getLast() - aux.start >= activeLength) {
                             activeLength++;
                         }
                         else {
                             activeNode = aux;
-                            activeLength = activeLength - (aux.finish - aux.start);
+                            activeLength = activeLength - (aux.getLast() - aux.start);
                             activeEdge = aux.getChildren(receivedString[i]).start;
                         }
 
