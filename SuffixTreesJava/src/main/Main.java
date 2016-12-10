@@ -29,6 +29,8 @@ public class Main {
 
 		String processedText = TextPreprocessor.readFile("/Texts/english.50MB");
 
+		int numberWordsToSearch = (int) (processedText.length()*1.0/10);
+
 		/**
 		 * Construimos el SuffixTree
 		 */
@@ -47,7 +49,7 @@ public class Main {
 		List<String> toSearch = new ArrayList<String>();
 		String splittedText[] = processedText.split(" ");
 
-		for (int i = 0; i < splittedText.length / 10; i++) {
+		for (int i = 0; i < numberWordsToSearch ; i++) {
 			toSearch.add(splittedText[(int) (Math.random() * splittedText.length)]);
 		}
 
