@@ -44,7 +44,7 @@ public class Ukkonen {
                 if (activeLength == 0) {
                     int path = getPath(receivedString[i],activeNode);
                     if (path == -1) {
-                        activeNode.addChildren(new Node(receivedString[i]),receivedString[i]);
+                        activeNode.addChildren(new Node(i),receivedString[i]);
                         remaining--;
                     } else {
 					/*Rule 3*/
@@ -54,9 +54,12 @@ public class Ukkonen {
                     }
                 }
                 else {
-                    Node activeLeaf = activeNode.getChildren(activeEdge);
+                    //System.out.println(i);
+                    //System.out.println(activeEdge);
+                    //System.out.println(activeNode.getChildren(receivedString[activeEdge]).start);
+                    Node activeLeaf = activeNode.getChildren(receivedString[activeEdge]);
 					/*Es el siguiente caracter del que estamos parados igual a i?*/
-                    char c = receivedString[activeEdge + activeLength];
+                    char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
                     if (c == receivedString[i]) {
                         if (suffixLink != null) {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
@@ -78,7 +81,7 @@ public class Ukkonen {
                     }
                     /*Crear nodo interno*/
                     else {
-                        int x = activeNode.getChildren(activeEdge).start;
+                        int x = activeNode.getChildren(receivedString[activeEdge]).start;
                         Node child1 = new Node(x + activeLength);
                         Node child2 = new Node(i);
                         InternalNode internal = new InternalNode(x, x + activeLength -1);
