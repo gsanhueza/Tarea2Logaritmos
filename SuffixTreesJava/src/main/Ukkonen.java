@@ -37,8 +37,8 @@ public class Ukkonen {
     }
 
     /*Retorna todas las posiciones donde comienza el sufijo*/
-    public List<Integer> search(String suffix) {
-        Node root = run();
+    public List<Integer> search(String suffix,Node root) {
+        //Node root = run();
         char [] charArray = suffix.toCharArray();
         root = root.children[charArray[0]];
 
