@@ -1,6 +1,7 @@
 package main;
 
 public class ImplicitSuffixTree {
+
 	static int end;
 	private int remaining;
 	private Node activeNode;

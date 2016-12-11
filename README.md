@@ -1,5 +1,11 @@
 # Tarea 2 Logaritmos
 
-* Escrito en Java (total, no necesitamos manejo de memoria (?))
+* Escrito en Java
 * Algoritmo de Ukkonen
-* Necesitamos alguien que entienda el enunciado xD
+
+## TODO
+* Algoritmo v2
+* Algoritmo v3
+
+## DONE
+* Algoritmo v1

@@ -3,11 +3,13 @@ package main;
 public class Node {
 	private Node suffixLink;
 	private String suffix;
-	public int start;
-	private Last last;
+	public int start,finish;
 	protected boolean isLeaf;
-	public Node[] children;
-
+	Node[] children;
+	
+	// FIXME Maybe deprecated
+	private String data;
+	private Last last;
 	
 	public Node() {
 		this(-1);
@@ -18,9 +20,9 @@ public class Node {
 		this.start = start;
 		last = Last.getInstance();
 		isLeaf = true;
-		children = new Node[128];
-		}
 
+		children = new Node[128];
+	}
 
 /*	public int getPath(char s) {
 
@@ -59,5 +61,13 @@ public class Node {
 		return last.getValue();
 	}
 
+	public String getData() {
+		return data;
+	}
+
+	public Node setData(String data) {
+		this.data = data;
+		return this;
+	}
 
 }
