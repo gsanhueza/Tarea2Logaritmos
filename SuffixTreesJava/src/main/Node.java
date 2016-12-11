@@ -5,7 +5,7 @@ public class Node {
 	private String suffix;
 	public int start;
 	private Last last;
-	private boolean isLeaf;
+	protected boolean isLeaf;
 	public Node[] children;
 
 	
@@ -18,7 +18,7 @@ public class Node {
 		this.start = start;
 		last = Last.getInstance();
 		isLeaf = true;
-		children = new Node[256];
+		children = new Node[128];
 		}
 
 

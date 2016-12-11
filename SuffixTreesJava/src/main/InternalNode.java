@@ -10,6 +10,7 @@ public class InternalNode extends Node {
         super();
         this.start = start;
         this.lastNum = lastNum;
+        this.isLeaf = false;
     }
 
     public int getLast() {
