@@ -8,13 +8,16 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class Main {
 	public static void main(String[] args) {
 		String input = "banana$";
 		Ukkonen x = new Ukkonen(input);
+        Node t = x.run();
 		//Node root = x.run();
         //imprimirSuffixTree(root);
-        List<Integer> resp = x.search("ana");
+        List<Integer> resp = x.search("ana",t);
         if (resp!=null) {
             System.out.println("El sufijo puede encontrarse en la/s posicion/nes: " );
             for (int integer : resp) {
@@ -54,10 +57,10 @@ public class Main {
 		/**
 		 * Construimos el SuffixTree
 		 */
-		SuffixTree st = new SuffixTree();
+		Ukkonen st = new Ukkonen(processedText);
 
 		initTime = System.currentTimeMillis();
-		st.createSuffixTree(processedText);
+		Node root = st.run();
 		endTime = System.currentTimeMillis();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
@@ -81,7 +84,7 @@ public class Main {
 			logger.log("Palabra buscada: " + word);
 			logger.log("Largo de la palabra: " + wordLength);
 			initTime = System.currentTimeMillis();
-			List<String> ocurrences = st.search(word);
+			List<Integer> ocurrences = st.search(word,root);
 			endTime = System.currentTimeMillis();
 			logger.log("Tiempo de búsqueda: " + (endTime - initTime));
 			logger.log("Número de ocurrencias: " + ocurrences.size());

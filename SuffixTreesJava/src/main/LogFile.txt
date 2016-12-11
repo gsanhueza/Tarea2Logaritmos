@@ -1,0 +1,2 @@
+Tiempo de construcción de SuffixTree = 0
+
