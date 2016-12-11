@@ -1,32 +1,41 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-public class Node implements Iterable<Node> {
+public class Node {
 	private Node suffixLink;
-	private String suffix;
-	public int start,finish;
-	private boolean isLeaf;
-	private List<Node> children;
+	public int start;
+	private Last last;
+
+	public int finish;
+	protected boolean isLeaf;
+	Node[] children;
 	
-	// FIXME Maybe deprecated
 	private String data;
 	
 	public Node() {
-		this(-1,-1);
+		this(-1);
 	}
 
-	public Node(int start, int finish) {
+	public Node(int start) {
 		setLink(null);
 		this.start = start;
-		this.finish = finish;
+		last = Last.getInstance();
 		isLeaf = true;
-		children = new ArrayList<Node>();
+
+		children = new Node[128];
 	}
 
-	
+/*	public int getPath(char s) {
+
+		for (Node node : children) {
+			if (s == (node.firstChar))
+				return start;
+
+		}
+
+
+		return -1;
+	}*/
+
 	public void setLink(Node link) {
 		suffixLink = link;
 	}
@@ -35,8 +44,8 @@ public class Node implements Iterable<Node> {
 		return suffixLink;
 	}
 
-	public void addChildren(Node node) {
-		children.add(node);
+	public void addChildren(Node node, int i) {
+		children[i] = node;
 		isLeaf = false;
 	}
 
@@ -44,9 +53,12 @@ public class Node implements Iterable<Node> {
 		return isLeaf;
 	}
 
-	@Override
-	public Iterator<Node> iterator() {
-		return children.iterator();
+	public Node getChildren(int i) {
+		return children[i];
+	}
+
+	public int getLast() {
+		return last.getValue();
 	}
 
 	public String getData() {

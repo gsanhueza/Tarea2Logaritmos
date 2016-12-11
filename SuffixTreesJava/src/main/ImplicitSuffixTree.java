@@ -5,8 +5,8 @@ public class ImplicitSuffixTree {
 	static int end;
 	private int remaining;
 	private Node activeNode;
-	private int activeEdge;
-	private int activeLength;
+	public int activeEdge;
+	public int activeLength;
 
 	private String receivedString;
 
@@ -14,7 +14,7 @@ public class ImplicitSuffixTree {
 		this.receivedString = receivedString;
 		end = -1;
 		remaining = 0;
-		activeNode = new Node();
+		activeNode = null;
 		activeEdge = -1;
 		activeLength  = 0;
 
@@ -57,17 +57,42 @@ public class ImplicitSuffixTree {
 	}
 
 	public Node runUkkonen() {
+		Node suffixLink = null;
+		activeNode = new Node();
 		Node root = activeNode;
 		for (int i = 0; i < receivedString.length(); i++) {
 			remaining++;
-			end = i;
+			end++;
 
 			while (remaining > 0) {
-				/*No existe un camine desde el Nodo en que estamos*/
+				/*getPath entrega la variable "start" si es que hay match con el primer caracter de la branch,
+				o -1 si es que no hay*/
 				if (activeLength == 0) {
-					activeNode.addChildren(new Node(i,end));
+					//int path = activeNode.getPath(receivedString.charAt(i));
+					//if (path == -1) {
+					//	activeNode.addChildren(new Node(i, end, receivedString.charAt(i)), i);
+					//	remaining--;
+					//} else {
+					/*Rule 3*/
+					//	activeEdge = path;
+					//	activeLength++;
+					//	break;
+					//}
 				}
+				else {
+					Node aux = activeNode.getChildren(activeEdge);
+					/*Caracter en el que estamos parados*/
+					char c = receivedString.charAt(activeNode.getChildren(activeEdge).start + activeLength );
+					if (c == receivedString.charAt(i)) {
+						if (suffixLink != null) {
+							/*Hacer algo*/
+						}
 
+
+					}
+
+
+				}
 			}
 
 		}
