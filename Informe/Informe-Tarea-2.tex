@@ -64,28 +64,43 @@
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 	\section{Introducción}
+	
+	
+	%% fix esto es como blabla pero no deberia ir aca xD %%
 
 	Se pide que plantee una hipótesis con respecto al tiempo amortizado de construcción de una estructura de este
 	tipo y al tiempo de búsqueda, y la ponga a prueba de forma experimental.
- 	Se espera que se implemente la estructura y los algoritmos correspondientes, y se entregue un informe.
-
+	Se espera que se implemente la estructura y los algoritmos correspondientes, y se entregue un informe.
+	En el presente informe se muestra el diseño, implementación y experimentación para resolver la Tarea 2 del curso CC4102 Diseño y Análisis de Algoritmos de la carrera de ingeniería civil en Computación de la Universidad de Chile, la cual consiste en programar un algoritmo de orden lineal para la creación de Suffix Trees, una estructura de datos de datos del tipo Arbol, la que esta formada por Nodos que poseen información interna y referencias a sus hijo. En particular el SuffixTree almacena los sufijos de un string en forma de arbol, de modo que cada arco contiene los caracteres para formar una palabra, si se llega a una hoja ( nodo terminal ) es porque recorrimos los arcos necesarios para formar un sufijo. La idea de la tarea es que el algoritmo a desarrollar es on-line, de orden lineal y con una implementación mas sencilla con respecto a algoritmos similares ( algoritmo de Wiener y algoritmo de McCreight ). 
+	
+	
+	
 	\subsection{Problema a resolver}
+	%% Se puede rellenar mas aca%%
+	El problema consiste en realizar los pasos necesarios para la buena implementación del algoritmo, ya que pequeños errores en código pueden producir un algoritmo de mayor orden de magnitud y con ello se falla en el objetivo. Los pasos para realizarlos estan detallados en el enunciado de la tarea y son los pasos que se desarrollan en el paper del algoritmo de ukkonen, el cual se encuentra disponible en el enunciado de la tarea. Como resumen, se puede detallar que los pasos consisten en pasar un algoritmo de Orden n³ a orden lineal.	
 
 	\subsection{Hipótesis}
-
-	\subsubsection*{Especificaciones de la máquina utilizada}
+	
+	%% por tener alguna (?)%%
+	Si bien es un algoritmo lineal, el algoritmo posee una constante que hace que el tiempo pueda crecer de manera rapida, tambien como el algoritmo será escrito en java como lenguaje, posee caracteristicas como el garbage collector que reducen la eficiencia del algoritmo al tomar la Cpu para hacer realizar sus funciones. Se espera demostrar que la constante del algoritmo varía con respecto al largo por motivos externos al algoritmo, esto se puede mostrar si para números pequeños el agoritmo si demuestra un comportamiento lineal.
+	
+	\subsection*{Especificaciones de la máquina utilizada}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-	\section{Diseño Experimental}
+
+	\section{Diseño Teórico}
+	Para explicar el diseño teórico del algoritmo primero se deben definir algunos conceptos:
+	\begin{item}
+	\item Suffix Tree Implicit es un Suffix Tree al cual se le remueven sus simbolos terminales ( en algunos casos se utiliza el signo \$ como terminal)
 
 	\subsection{Metodología}
 
 	\subsection{Structs}
 
-	\subsubsection{Rectangle}
+	\subsubsection{Rectangle?}
 
 	\subsubsection{Node}
 

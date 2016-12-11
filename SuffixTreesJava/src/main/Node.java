@@ -4,9 +4,12 @@ public class Node {
 	private Node suffixLink;
 	public int start;
 	private Last last;
-	protected boolean isLeaf;
-	public Node[] children;
 
+	public int finish;
+	protected boolean isLeaf;
+	Node[] children;
+	
+	private String data;
 	
 	public Node() {
 		this(-1);
@@ -17,9 +20,9 @@ public class Node {
 		this.start = start;
 		last = Last.getInstance();
 		isLeaf = true;
-		children = new Node[128];
-		}
 
+		children = new Node[128];
+	}
 
 /*	public int getPath(char s) {
 
@@ -58,5 +61,13 @@ public class Node {
 		return last.getValue();
 	}
 
+	public String getData() {
+		return data;
+	}
+
+	public Node setData(String data) {
+		this.data = data;
+		return this;
+	}
 
 }
