@@ -2,7 +2,6 @@ package main;
 
 public class Node {
 	private Node suffixLink;
-	private String suffix;
 	public int start;
 	private Last last;
 	protected boolean isLeaf;
