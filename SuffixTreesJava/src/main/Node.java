@@ -59,4 +59,5 @@ public class Node {
 		return last.getValue();
 	}
 
+
 }

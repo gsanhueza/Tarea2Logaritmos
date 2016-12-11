@@ -10,11 +10,21 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		String input = "xyzxyaxyz$";
+		String input = "banana$";
 		Ukkonen x = new Ukkonen(input);
 		//Node root = x.run();
         //imprimirSuffixTree(root);
-        System.out.println(x.search("xyz$"));
+        List<Integer> resp = x.search("ana");
+        if (resp!=null) {
+            System.out.println("El sufijo puede encontrarse en la/s posicion/nes: " );
+            for (int integer : resp) {
+
+                System.out.print(integer+ "  ");
+
+            }
+        }
+        else
+            System.out.println("No se encontro el sufijo");
 
 	}
 

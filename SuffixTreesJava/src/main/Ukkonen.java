@@ -13,10 +13,12 @@ public class Ukkonen {
     public int activeEdge;
     public int activeLength;
     private List<String> suffixes;
+    private String realString;
 
     private char[] receivedString;
 
     public Ukkonen (String receivedString) {
+        realString = receivedString;
         this.receivedString = receivedString.toCharArray();
         end = Last.getInstance();
         remaining = 0;
@@ -34,35 +36,99 @@ public class Ukkonen {
 
     }
 
-    /*Retorna la posicion donde comienza el sufijo*/
-    public int search(String suffix) {
-        Node root = this.run();
+    /*Retorna todas las posiciones donde comienza el sufijo*/
+    public List<Integer> search(String suffix) {
+        Node root = run();
+        char [] charArray = suffix.toCharArray();
+        root = root.children[charArray[0]];
+
+
+        return getSuffixes(root,suffix,0);
+    }
+
+    private List<Integer> getSuffixes(Node root, String suffix,int count) {
+
         char [] charArray = suffix.toCharArray();
         int max = charArray.length;
-        /*Necesitamos guardar la cantidad de letras que "leemos" para saber donde empieza el sufijo*/
-        int count = 0;
-        while (!root.isLeaf()) {
-            if (max < count) {
-                /*No se encontro*/
-                return -1;
-            }
-            try {
-                root = root.children[charArray[count]];
-                count = count + (root.getLast() - root.start + 1);
-            }
-            catch (Exception e) {
-                return -1;
-            }
+        List<Integer> resp = new ArrayList<Integer>();
+        if (root == null) {
+            return null;
         }
 
-        return (receivedString.length - count);
+        if (root.isLeaf() ) {
+            if (suffix.equals(realString.substring(root.start,root.getLast()+1))) {
+
+                resp.add(realString.length() -(count+1) );
+                return resp;
+            }
+            else
+                return null;
+
+        }
+
+
+        if (realString.substring(root.start,root.getLast()+1).equals(suffix)) {
+
+            List<Integer> integer;
+            for (Node n : root.children) {
+                List<Integer> aux = (getLeafPath(n, count +root.getLast()- root.start +1));
+                if (aux != null) {
+                    for (int i : aux)
+                        resp.add(i);
+                }
+            }
+
+            return resp;
+
+        }
+
+
+
+        if (suffix.contains(realString.substring(root.start,root.getLast()+1))){
+
+                for (Node n : root.children) {
+                    List<Integer> aux = getSuffixes(n,suffix.substring(root.getLast()- root.start +1) ,count +root.getLast()- root.start +1);
+                    if ( aux != null){
+                        for (int integer : aux){
+                            resp.add(integer);
+                        }
+                    }
+
+                }
+        }
+
+        else
+            return null;
+
+        return resp;
+
+
+
 
     }
 
-    /*Se agregaran todos los sufijos del arbol (sus hojas), a una lista para despues ser comparadas con el sufijo buscado*/
-    private void getSuffixes(Node root) {
+    private List<Integer> getLeafPath(Node n,int count) {
+        List<Integer> resp = new ArrayList<Integer>();
+        if (n == null)
+            return null;
 
+        if (n.isLeaf()) {
+            resp.add(realString.length() -( (count + 1)  +n.getLast()- n.start) );
+            return resp;
+
+        }
+        for (Node aux : n.children) {
+            List<Integer> integers = getLeafPath(aux, count + n.getLast() - n.start + 1);
+            if (integers != null) {
+                for (int i : integers)
+                    resp.add(i);
+            }
+            return resp;
+
+        }
+        return resp;
     }
+
 
     /*La creacion del arbol es O(n)*/
     public Node run() {
