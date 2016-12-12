@@ -13,10 +13,12 @@ public class Main {
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "banana$";
+		String input = "101001100$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
-		List<Integer> resp = x.search("ana", t);
+		imprimirSuffixTree(t);
+
+		List<Integer> resp = x.search("001", t);
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
@@ -52,16 +54,16 @@ public class Main {
 		}
 
 		String processedText = TextPreprocessor.process(text);
-		System.out.println("El texto procesado es de " + processedText.length() + " caracteres");
-
+        System.out.println(processedText);
+		System.out.println("\nEl texto procesado es de " + processedText.length() + " caracteres");
 		/**
 		 * Construimos el SuffixTree
 		 */
 		Ukkonen st = new Ukkonen(processedText);
 
-		initTime = System.currentTimeMillis();
+		initTime = System.nanoTime();
 		Node root = st.run();
-		endTime = System.currentTimeMillis();
+		endTime = System.nanoTime();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log();
@@ -80,22 +82,27 @@ public class Main {
 		 * Buscamos las palabras en el Suffix Tree
 		 */
 		for (String word : toSearch) {
-			int wordLength = word.length();
-			logger.log("Palabra buscada: " + word);
-			logger.log("Largo de la palabra: " + wordLength);
-			initTime = System.currentTimeMillis();
-			List<Integer> ocurrences = st.search(word, root);
-			endTime = System.currentTimeMillis();
-			logger.log("Tiempo de búsqueda: " + (endTime - initTime));
-			logger.log("Número de ocurrencias: " + ocurrences.size());
-			logger.log();
+			if (word.length() != 0) {
 
+				int wordLength = word.length();
+				logger.log("Palabra buscada: " + word);
+				logger.log("Largo de la palabra: " + wordLength);
+				initTime = System.nanoTime();
+				List<Integer> ocurrences = st.search(word, root);
+				endTime = System.nanoTime();
+				logger.log("Tiempo de búsqueda: " + (endTime - initTime));
+				if (ocurrences != null)
+					logger.log("Número de ocurrencias: " + ocurrences.size());
+				else
+					logger.log("Número de ocurrencias: 0");
+				logger.log();
+			}
 		}
 		logger.terminate();
 
 	}
 	
-	/*
+
 	public static void imprimirSuffixTree(Node root) {
 		int i = 0;
 		int j = -1;
@@ -114,6 +121,6 @@ public class Main {
 		System.out.println("Cantidad de hijos: " + i);
 
 	}
-	*/
+
 
 }

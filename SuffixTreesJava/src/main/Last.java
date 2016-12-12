@@ -19,6 +19,10 @@ public class Last {
         return value;
     }
 
+    public void setValue(int i) {
+        value = i;
+    }
+
     public void increment() {
         value++;
     }
