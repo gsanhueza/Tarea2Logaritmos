@@ -202,6 +202,7 @@ public class Ukkonen {
 
 						else {
 							activeNode = activeNode.getLink();
+							System.out.println(activeNode.getLink() == null); // FALLA AQUI
 						}
 					}
 
