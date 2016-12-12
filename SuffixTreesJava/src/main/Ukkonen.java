@@ -61,7 +61,6 @@ public class Ukkonen {
 				return null;
 
 		}
-		System.out.println("xxxxxx: " + root.start+"  " +(root.getLast() + 1));
 		if (realString.substring(root.start, root.getLast() + 1).equals(suffix)) {
 			for (Node n : root.children) {
 				List<Integer> aux = (getLeafPath(n, count + root.getLast() - root.start + 1));
@@ -129,6 +128,10 @@ public class Ukkonen {
 					int path = getPath(receivedString[i], activeNode);
 					if (path == -1) {
 						activeNode.addChildren(new Node(i), receivedString[i]);
+						if (activeNode.getLink()!= null) {
+							activeNode = activeNode.getLink();
+						}
+
 						remaining--;
 					} else {
 						/* Rule 3 */
@@ -156,11 +159,12 @@ public class Ukkonen {
 					if (activeLength == 0) {
 						System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 					}
-					if (activeLeaf.getLast() - activeLeaf.start +1 < activeLength) {
+					if (activeLeaf.getLast() - activeLeaf.start +1 < activeLength+1) {
 						activeNode = activeLeaf;
 
-						activeLength = activeLength -(activeLeaf.getLast() - activeLeaf.start+1);//Esto esta malo, da 0 a veces
-						dif = dif -activeLength;
+						activeLength = activeLength -(activeLeaf.getLast() - activeLeaf.start+1);
+						continue;//Esto esta malo, da 0 a veces
+						/*dif = dif -activeLength;
 						if (activeLeaf.getChildren(receivedString[activeEdge+dif]) == null)
 							System.out.println("mmmmmmmmmm: " + realString.substring(i,i+11));
 						try {
@@ -168,7 +172,7 @@ public class Ukkonen {
 						}
 						catch (NullPointerException e) {
 							Node auxNode = new Node(activeEdge+dif);
-							activeLeaf.children[receivedString[activeEdge + dif]] = auxNode;
+							activeLeaf.addChildren(auxNode,receivedString[activeEdge + dif]);
 							activeEdge = activeLeaf.getChildren(receivedString[activeEdge + dif]).start;
 							if (suffixLink!= null) {
 								suffixLink.setLink(auxNode);
@@ -178,7 +182,7 @@ public class Ukkonen {
 							remaining--;
 
 
-						}
+						}*/
 					}
 					char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
 					if (c == receivedString[i]) {
@@ -259,6 +263,44 @@ public class Ukkonen {
 
 		}
 		return root;
+	}
+
+	public List<Integer> buscar(Node root, String suffix) {
+		int i = 0;
+		int suffixLength = suffix.length();
+		List<Integer> resp = new ArrayList<Integer>();
+		Node currentNode = root;
+		for (;;) {
+			System.out.println("aaaa");
+			if (currentNode.children == null)
+				break;
+			if (i>suffixLength)
+				break;
+			for (Node auxNode : currentNode.children) {
+				if (auxNode == null)
+					continue;
+				if (receivedString[auxNode.start] == suffix.charAt(i)) {
+					int difference = auxNode.getLast() - auxNode.start+1;
+					if (difference < suffixLength-i) {
+						i+= difference;
+						currentNode = auxNode;
+
+						break;
+					}
+					else if (difference > suffixLength-i) {
+						resp.add(i);
+						i +=difference;
+						currentNode = auxNode;
+					}
+
+					else {
+						resp.add(i);
+					}
+
+				}
+			}
+		}
+		return resp;
 	}
 
 	private void moveToLink() {

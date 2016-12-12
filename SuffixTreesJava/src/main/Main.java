@@ -10,16 +10,16 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-<<<<<<< HEAD
+
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "101001100$";
+		String input = "1010011001010011001$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
 		imprimirSuffixTree(t);
 
-		List<Integer> resp = x.search("001", t);
+		List<Integer> resp = x.buscar(t,"00");
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
@@ -32,8 +32,6 @@ public class Main {
 		/**
 		 * TEST 2 text = (english.short) search = book
 		 */
-=======
->>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 		long initTime;
 		long endTime;
 
@@ -57,14 +55,10 @@ public class Main {
 		}
 
 		String processedText = TextPreprocessor.process(text);
-<<<<<<< HEAD
-        System.out.println(processedText);
-		System.out.println("\nEl texto procesado es de " + processedText.length() + " caracteres");
-=======
+
 		double textLength = Math.log(processedText.length()) / Math.log(2.0);
 		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
 
->>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 		/**
 		 * Construimos el SuffixTree
 		 */
@@ -110,7 +104,7 @@ public class Main {
 		logger.terminate();
 
 	}
-<<<<<<< HEAD
+
 	
 
 	public static void imprimirSuffixTree(Node root) {
@@ -132,7 +126,5 @@ public class Main {
 
 	}
 
-=======
->>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 
 }
