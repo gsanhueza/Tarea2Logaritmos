@@ -105,17 +105,17 @@
 		\item Suffix Tree Implicit es un Suffix Tree al cual se le remueven sus simbolos terminales ( en algunos casos se utiliza el signo \$ como terminal)
 	\end{itemize}
 
-	\subsection{Metodología}
+	\subsection{Main}
 
-	\subsection{Structs}
+	// TODO: Explicar que hicimos en main, i.e. hacer un logger, cargar texto, como procesamos el texto, etc
 
-	\subsubsection{Rectangle?}
+	\subsection{Ukkonen}
 
-	\subsubsection{Node}
+	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
 
-	\subsection{Constantes}
+	\subsection{Otras clases}
 
-	\subsection{Funciones}
+	// TODO: Limpiar código de las clases que no se usan, para poner aquí las que sí usamos
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -127,6 +127,30 @@
 
 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
 
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Largo del texto & Tiempo de Construcción & Operaciones por fase\\
+			\hline
+			$2^{15}$ & X & X\\
+			\hline
+			$2^{16}$ & X & X\\
+			\hline
+			$2^{17}$ & X & X\\
+			\hline
+			$2^{18}$ & X & X\\
+			\hline
+			$2^{19}$ & X & X\\
+			\hline
+			$2^{20}$ & X & X\\
+			\hline
+			$2^{21}$ & X & X\\
+			\hline
+		\end{tabular}
+	\end{center}
+
+	// TODO: Insertar gráfico
+
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -134,6 +158,30 @@
 	\subsection{Desempeño de operación \textit{Buscar}}
 
 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Número de palabras & Largo promedio del patrón & Tiempo de búsqueda\\
+			\hline
+			$2^{15}$ & X & X\\
+			\hline
+			$2^{16}$ & X & X\\
+			\hline
+			$2^{17}$ & X & X\\
+			\hline
+			$2^{18}$ & X & X\\
+			\hline
+			$2^{19}$ & X & X\\
+			\hline
+			$2^{20}$ & X & X\\
+			\hline
+			$2^{21}$ & X & X\\
+			\hline
+		\end{tabular}
+	\end{center}
+
+	// TODO: Insertar gráfico
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
