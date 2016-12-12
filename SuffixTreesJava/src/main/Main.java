@@ -27,7 +27,7 @@ public class Main {
 		String text = null;
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.short")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N15")), StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
