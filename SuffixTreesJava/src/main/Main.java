@@ -10,25 +10,6 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		/**
-		 * TEST 1 text = banana search = ana
-		 */
-		String input = "banana$";
-		Ukkonen x = new Ukkonen(input);
-		Node t = x.run();
-		List<Integer> resp = x.search("ana", t);
-		if (resp != null) {
-			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
-			for (int integer : resp) {
-				System.out.print(integer + "  ");
-			}
-		} else {
-			System.out.println("No se encontro el sufijo");
-		}
-
-		/**
-		 * TEST 2 text = (english.short) search = book
-		 */
 		long initTime;
 		long endTime;
 
@@ -52,7 +33,8 @@ public class Main {
 		}
 
 		String processedText = TextPreprocessor.process(text);
-		System.out.println("El texto procesado es de " + processedText.length() + " caracteres");
+		double textLength = Math.log(processedText.length()) / Math.log(2.0);
+		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
 
 		/**
 		 * Construimos el SuffixTree
@@ -94,26 +76,5 @@ public class Main {
 		logger.terminate();
 
 	}
-	
-	/*
-	public static void imprimirSuffixTree(Node root) {
-		int i = 0;
-		int j = -1;
-		for (Node n : root.children) {
-			j++;
-			if (n != null) {
-				i++;
-				System.out.println("i: " + i);
-				System.out.println("suffix: " + n.start + "  finish: " + n.getLast());
-				System.out.println("j: " + j);
-				System.out.println("\n");
-				imprimirSuffixTree(n);
-
-			}
-		}
-		System.out.println("Cantidad de hijos: " + i);
-
-	}
-	*/
 
 }
