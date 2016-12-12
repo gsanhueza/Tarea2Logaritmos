@@ -98,16 +98,20 @@
 
 	\section{Diseño Teórico}
 
-	// TODO: Mostrar las distintas clases creadas y para qué sirven (cada clase puede tener su propia subsection)
-
-	Para explicar el diseño teórico del algoritmo primero se deben definir algunos conceptos:
-	\begin{itemize}
-		\item Suffix Tree Implicit es un Suffix Tree al cual se le remueven sus simbolos terminales ( en algunos casos se utiliza el signo \$ como terminal)
-	\end{itemize}
+	Se crearon distintas clases de Java para cada comportamiento dentro del Suffix Tree, y una clase principal Main, donde se hacen las pruebas.
 
 	\subsection{Main}
 
-	// TODO: Explicar que hicimos en main, i.e. hacer un logger, cargar texto, como procesamos el texto, etc
+	En Main se crea un archivo de \textit{logging} para registrar el tiempo de creación del Suffix Tree y los resultados de búsqueda, a partir de un texto leído desde el disco.
+	En particular:
+	\begin{itemize}
+		\item El texto leído se preprocesa (se eliminan puntuaciones, espacios, saltos de línea y todo lo que no corresponda al \textit{regex} [a-ZA-Z]).
+		\item Se crea el Suffix Tree usando el algoritmo de Ukkonen.
+		\item Se registra el tiempo de creación.
+		\item Se generan palabras aleatorias del texto, para buscarlas usando el Suffix Tree.
+		\item Se registran los resultados de búsqueda.
+	\end{itemize}
+
 
 	\subsection{Ukkonen}
 
@@ -149,7 +153,11 @@
 		\end{tabular}
 	\end{center}
 
-	\includegraphics[width=0.7\textwidth]{fig1.png}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{fig1.png}
+
+		Figura 1:
+	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -181,9 +189,17 @@
 		\end{tabular}
 	\end{center}
 
-	\includegraphics[width=0.7\textwidth]{fig2.png}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{fig2.png}
 
-	\includegraphics[width=0.7\textwidth]{fig3.png}
+		Figura 2:
+	\end{center}
+
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{fig3.png}
+
+		Figura 3:
+	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
