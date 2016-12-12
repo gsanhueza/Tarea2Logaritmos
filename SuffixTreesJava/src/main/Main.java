@@ -10,6 +10,7 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
@@ -31,6 +32,8 @@ public class Main {
 		/**
 		 * TEST 2 text = (english.short) search = book
 		 */
+=======
+>>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 		long initTime;
 		long endTime;
 
@@ -48,14 +51,20 @@ public class Main {
 		String text = null;
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.short")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N15")), StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		String processedText = TextPreprocessor.process(text);
+<<<<<<< HEAD
         System.out.println(processedText);
 		System.out.println("\nEl texto procesado es de " + processedText.length() + " caracteres");
+=======
+		double textLength = Math.log(processedText.length()) / Math.log(2.0);
+		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
+
+>>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 		/**
 		 * Construimos el SuffixTree
 		 */
@@ -101,6 +110,7 @@ public class Main {
 		logger.terminate();
 
 	}
+<<<<<<< HEAD
 	
 
 	public static void imprimirSuffixTree(Node root) {
@@ -122,5 +132,7 @@ public class Main {
 
 	}
 
+=======
+>>>>>>> 298360b27b4eb25dd81cb07b73117d054716368d
 
 }

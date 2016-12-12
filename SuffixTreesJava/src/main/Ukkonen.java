@@ -248,6 +248,7 @@ public class Ukkonen {
 							else
 								activeNode = root;
 
+
 						}
 					}
 

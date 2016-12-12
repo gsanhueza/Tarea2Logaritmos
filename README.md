@@ -4,8 +4,6 @@
 * Algoritmo de Ukkonen
 
 ## TODO
-* Algoritmo v2
-* Algoritmo v3
+* Revisar algoritmo
+* Hacer las pruebas 
 
-## DONE
-* Algoritmo v1
