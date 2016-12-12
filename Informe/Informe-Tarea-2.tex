@@ -98,8 +98,6 @@
 
 	\section{Diseño Teórico}
 
-	Se crearon distintas clases de Java para cada comportamiento dentro del Suffix Tree, y una clase principal Main, donde se hacen las pruebas.
-
 	\subsection{Main}
 
 	En Main se crea un archivo de \textit{logging} para registrar el tiempo de creación del Suffix Tree y los resultados de búsqueda, a partir de un texto leído desde el disco.
@@ -114,15 +112,25 @@
 
 	\subsection{Ukkonen}
 
-% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+	Clase principal del algoritmo. Aquí se realiza la totalidad de la ejecución del algoritmo de Ukkonen.
+
+	Posee 5 métodos auxiliares:
+	\begin{itemize}
+		\item run(): Crea el Suffix Tree correspondiente, usando los siguientes métodos auxiliares.
+		\item getPath(char s, Node n): Retorna el camino desde el nodo n, con el caracter s.
+		\item search(String suffix, Node root): Busca el String \textit{suffix} en el nodo \textit{root}
+		\item getSuffixes(Node root, String suffix, int count): Método auxiliar para search. Busca recursivamente en los nodos por el sufijo \textit{suffix} usando
+		el número \textit{count} (usado para los caminos).
+		\item getLeafPath(Node n, int count): Retorna el camino a partir del nodo n, recorriendo \textit{count} nodos internos.
+	\end{itemize}
 
 	\subsection{Last}
 
-% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+	Esta clase es usada para mostrar el final de un camino.
 
 	\subsection{Node}
 
-% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+	Esta clase se usa para almacenar la información correspondiente a cada sufijo. Puede ser o no ser una hoja. Es clase padre de \textit{InternalNode}.
 
 	\subsection{InternalNode}
 
@@ -131,7 +139,7 @@
 	\subsection{TextPreprocessor}
 
 	Esta clase recibe un texto como String y devuelve solamente los caracteres que coinciden con el \textit{regex} [a-zA-Z ]. El resto de los caracteres se eliminan
-	(entre los cuales están los saltos de línea, las puntuaciones y los espacios) % TODO Los espacios?
+	(entre los cuales están los saltos de línea, las puntuaciones y los espacios)
 
 	\subsection{Logger}
 
