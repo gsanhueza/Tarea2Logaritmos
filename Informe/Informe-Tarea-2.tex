@@ -112,14 +112,30 @@
 		\item Se registran los resultados de búsqueda.
 	\end{itemize}
 
-
 	\subsection{Ukkonen}
 
-	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
 
-	\subsection{Otras clases}
+	\subsection{Last}
 
-	// TODO: Limpiar código de las clases que no se usan, para poner aquí las que sí usamos
+% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+
+	\subsection{Node}
+
+% 	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+
+	\subsection{InternalNode}
+
+	Esta clase extiende de \textit{Node} para usarse como nodo interno (i.e., explícitamente \textbf{no es} una hoja).
+
+	\subsection{TextPreprocessor}
+
+	Esta clase recibe un texto como String y devuelve solamente los caracteres que coinciden con el \textit{regex} [a-zA-Z ]. El resto de los caracteres se eliminan
+	(entre los cuales están los saltos de línea, las puntuaciones y los espacios) % TODO Los espacios?
+
+	\subsection{Logger}
+
+	Esta clase recibe un nombre de archivo y escribe los datos que se le entregan a dicho archivo. Sirve para registrar la información necesaria para generar los gráficos del informe.
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -129,7 +145,7 @@
 
 	\subsection{Tiempo de Creación del Suffix Tree}
 
-	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
+% 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -156,7 +172,7 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig1.png}
 
-		Figura 1:
+		Figura 1: Tiempo de creación del Suffix Tree
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -165,7 +181,7 @@
 
 	\subsection{Desempeño de operación \textit{Buscar}}
 
-	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+% 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -192,13 +208,13 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig2.png}
 
-		Figura 2:
+		Figura 2: Promedio de operaciones por fase
 	\end{center}
 
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig3.png}
 
-		Figura 3:
+		Figura 3: Tiempo de búsqueda
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -209,14 +225,14 @@
 
 	\subsection{Construcción del Suffix Tree}
 
-	// TODO: Verificar si el Suffix tree fue lineal o no
+% 	// TODO: Verificar si el Suffix tree fue lineal o no
 
 	\subsection{Búsqueda en el Suffix Tree}
 
-	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
+% 	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
 
 	\subsection{Conclusiones}
 
-	// TODO: Resumir lo ``aprendido'' (?)
+% 	// TODO: Resumir lo ``aprendido'' (?)
 
 \end{document}
