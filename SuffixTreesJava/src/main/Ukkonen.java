@@ -35,7 +35,13 @@ public class Ukkonen {
 	public List<Integer> search(String suffix, Node root) {
 		// Node root = run();
 		char[] charArray = suffix.toCharArray();
-		root = root.children[charArray[0]];
+		char la;
+		if (charArray.length != 0) {
+			la = charArray[0];
+			root = root.children[charArray[0]];
+		}
+		else
+			return null;
 
 		return getSuffixes(root, suffix, 0);
 	}
@@ -55,7 +61,6 @@ public class Ukkonen {
 				return null;
 
 		}
-
 		if (realString.substring(root.start, root.getLast() + 1).equals(suffix)) {
 			for (Node n : root.children) {
 				List<Integer> aux = (getLeafPath(n, count + root.getLast() - root.start + 1));
@@ -111,10 +116,9 @@ public class Ukkonen {
 		Node suffixLink = null;
 		activeNode = new InternalNode(-1, -1);
 		Node root = activeNode;
-		for (int i = 0; i < receivedString.length; i++) {
+		for (int i = 0; i < realString.length(); i++) {
 			remaining++;
-			end.increment();
-
+			end.setValue(i);
 			while (remaining > 0) {
 				/*
 				 * getPath entrega la variable "start" si es que hay match con
@@ -124,6 +128,10 @@ public class Ukkonen {
 					int path = getPath(receivedString[i], activeNode);
 					if (path == -1) {
 						activeNode.addChildren(new Node(i), receivedString[i]);
+						if (activeNode.getLink()!= null) {
+							activeNode = activeNode.getLink();
+						}
+
 						remaining--;
 					} else {
 						/* Rule 3 */
@@ -136,39 +144,74 @@ public class Ukkonen {
 					 * Nos paramos en el caracter que tenemos guardado (active
 					 * edge)
 					 */
+
 					Node activeLeaf = activeNode.getChildren(receivedString[activeEdge]);
+					if (activeLeaf == null) {
+						activeNode.children[receivedString[activeEdge]] = new Node(activeEdge);
+						activeLeaf = activeNode.getChildren(receivedString[activeEdge]);
+					}
+
 					/*
 					 * Es el siguiente caracter del que estamos parados igual a
 					 * i?
 					 */
+					int dif = activeLength;
+					if (activeLength == 0) {
+						System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+					}
+					if (activeLeaf.getLast() - activeLeaf.start +1 < activeLength+1) {
+						activeNode = activeLeaf;
+
+						activeLength = activeLength -(activeLeaf.getLast() - activeLeaf.start+1);
+						continue;//Esto esta malo, da 0 a veces
+						/*dif = dif -activeLength;
+						if (activeLeaf.getChildren(receivedString[activeEdge+dif]) == null)
+							System.out.println("mmmmmmmmmm: " + realString.substring(i,i+11));
+						try {
+							activeEdge = activeLeaf.getChildren(receivedString[activeEdge + dif]).start;
+						}
+						catch (NullPointerException e) {
+							Node auxNode = new Node(activeEdge+dif);
+							activeLeaf.addChildren(auxNode,receivedString[activeEdge + dif]);
+							activeEdge = activeLeaf.getChildren(receivedString[activeEdge + dif]).start;
+							if (suffixLink!= null) {
+								suffixLink.setLink(auxNode);
+
+							}
+							suffixLink = activeLeaf;
+							remaining--;
+
+
+						}*/
+					}
 					char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
 					if (c == receivedString[i]) {
-						if (suffixLink != null) {
+						/*if (suffixLink != null) {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
 							suffixLink = activeNode.getChildren(receivedString[i]);
 							activeNode.setLink(root);
-						}
+						}*/
+						activeLength++;
+						break;
 
-						if (activeLeaf.getLast() - activeLeaf.start >= activeLength) {
-							activeLength++;
-							break;
-						} else {
-							activeNode = activeLeaf;
-							activeLength = 1;
-							activeEdge = activeLeaf.getChildren(receivedString[i]).start;
-							break;
-						}
+
 
 					}
 					/* Crear nodo interno */
 					else {
+
 						/*
 						 * auxNode se utiliza para ver si el nodo en que estamos
 						 * parados es uno interno o una hoja
 						 */
+
 						Node auxNode = activeNode.getChildren(receivedString[activeEdge]);
 						int x = activeNode.getChildren(receivedString[activeEdge]).start;
+
+
 						InternalNode internal = new InternalNode(x, x + activeLength - 1);
+
+						System.out.println("aaaaaaaa: " + internal.start +"  " + internal.getLast());
 						internal.setLink(root);
 						Node child1;
 						Node child2;
@@ -177,12 +220,14 @@ public class Ukkonen {
 							child2 = new Node(i);
 
 						} else {
+
 							child1 = new InternalNode(x + activeLength, auxNode.getLast());
 							child1.children = auxNode.children;
 							child2 = new Node(i);
 
 						}
-
+						System.out.println("child1: " + child1.start + "  " + child1.getLast());
+						System.out.println("child2: " + child2.start + "  " + child2.getLast());
 						internal.addChildren(child1, receivedString[child1.start]);
 						internal.addChildren(child2, receivedString[child2.start]);
 						activeNode.addChildren(internal, receivedString[activeEdge]);
@@ -201,8 +246,10 @@ public class Ukkonen {
 						}
 
 						else {
-							activeNode = activeNode.getLink();
-							System.out.println(activeNode.getLink() == null); // FALLA AQUI
+							if (activeNode.getLink() != null)
+								activeNode = activeNode.getLink();
+							else
+								activeNode = root;
 
 						}
 					}
@@ -214,5 +261,47 @@ public class Ukkonen {
 
 		}
 		return root;
+	}
+
+	public List<Integer> buscar(Node root, String suffix) {
+		int i = 0;
+		int suffixLength = suffix.length();
+		List<Integer> resp = new ArrayList<Integer>();
+		Node currentNode = root;
+		for (;;) {
+			System.out.println("aaaa");
+			if (currentNode.children == null)
+				break;
+			if (i>suffixLength)
+				break;
+			for (Node auxNode : currentNode.children) {
+				if (auxNode == null)
+					continue;
+				if (receivedString[auxNode.start] == suffix.charAt(i)) {
+					int difference = auxNode.getLast() - auxNode.start+1;
+					if (difference < suffixLength-i) {
+						i+= difference;
+						currentNode = auxNode;
+
+						break;
+					}
+					else if (difference > suffixLength-i) {
+						resp.add(i);
+						i +=difference;
+						currentNode = auxNode;
+					}
+
+					else {
+						resp.add(i);
+					}
+
+				}
+			}
+		}
+		return resp;
+	}
+
+	private void moveToLink() {
+
 	}
 }
