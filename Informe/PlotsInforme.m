@@ -1,7 +1,7 @@
 # Inicializador
 
 start = 15;
-finish = 21;
+finish = 25;
 for i = start : finish
   text_length(i - start + 1) = 2^i;
   word_search_number(i - start + 1) = 2^i / 10;
@@ -18,6 +18,10 @@ construction_time(4) = 19; # 18
 construction_time(5) = 20; # 19
 construction_time(6) = 28; # 20
 construction_time(7) = 34; # 21
+construction_time(8) = 34; # 22
+construction_time(9) = 34; # 23
+construction_time(10) = 34; # 24
+construction_time(11) = 34; # 25
 
 # Operaciones por fase
 
@@ -28,6 +32,10 @@ avg_ops_per_phase(4) = 0;
 avg_ops_per_phase(5) = 0;
 avg_ops_per_phase(6) = 0;
 avg_ops_per_phase(7) = 0;
+avg_ops_per_phase(8) = 0;
+avg_ops_per_phase(9) = 0;
+avg_ops_per_phase(10) = 0;
+avg_ops_per_phase(11) = 0;
 
 # Largo promedio patron
 
@@ -38,6 +46,10 @@ avg_pattern_length(4) = 4;
 avg_pattern_length(5) = 5;
 avg_pattern_length(6) = 6;
 avg_pattern_length(7) = 7;
+avg_pattern_length(8) = 7;
+avg_pattern_length(9) = 7;
+avg_pattern_length(10) = 7;
+avg_pattern_length(11) = 7;
 
 # Tiempos de busqueda (mseg)
 
@@ -48,6 +60,10 @@ search_time(4) = 0;
 search_time(5) = 0;
 search_time(6) = 0;
 search_time(7) = 0;
+search_time(8) = 0;
+search_time(9) = 0;
+search_time(10) = 0;
+search_time(11) = 0;
 
 # --- END DATA --- #
 
@@ -61,6 +77,7 @@ grid on;
 xlabel ("Numero de caracteres en texto (escala log)");
 ylabel ("Tiempo de construccion (mseg)");
 title ("Numero de caracteres vs Tiempo de construccion del Suffix Tree");
+print -dpng fig1.png;
 hold off;
 
 # Plot para tiempo de construccion
@@ -73,6 +90,7 @@ grid on;
 xlabel ("Numero de caracteres en texto");
 ylabel ("Promedio de operaciones");
 title ("Numero de caracteres vs Operaciones por fase");
+print -dpng fig2.png;
 hold off;
 
 # Plot para busqueda
@@ -86,4 +104,5 @@ grid on;
 xlabel ("Numero de palabras");
 ylabel ("Tiempo de busqueda (mseg)");
 title ("Numero de palabras vs Tiempo de busqueda");
+print -dpng fig3.png;
 hold off;
