@@ -154,25 +154,34 @@
 	\subsection{Tiempo de Creación del Suffix Tree}
 
 % 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
+	Los resultados para los tiempos de construcción del Suffix Tree usando nuestra implementación son los siguientes:
 
 	\begin{center}
-		\begin{tabular}{|c|c|c|}
+		\begin{tabular}{|c|c|}
 			\hline
-			Largo del texto & Tiempo de Construcción & Operaciones por fase\\
+			Largo del texto & Tiempo de Construcción (mseg)\\
 			\hline
-			$2^{15}$ & X & X\\
+			$2^{15}$ & 6\\
 			\hline
-			$2^{16}$ & X & X\\
+			$2^{16}$ & 11\\
 			\hline
-			$2^{17}$ & X & X\\
+			$2^{17}$ & 16\\
 			\hline
-			$2^{18}$ & X & X\\
+			$2^{18}$ & 19\\
 			\hline
-			$2^{19}$ & X & X\\
+			$2^{19}$ & 20\\
 			\hline
-			$2^{20}$ & X & X\\
+			$2^{20}$ & 28\\
 			\hline
-			$2^{21}$ & X & X\\
+			$2^{21}$ & 34\\
+			\hline
+			$2^{22}$ & 34\\
+			\hline
+			$2^{23}$ & 34\\
+			\hline
+			$2^{24}$ & 34\\
+			\hline
+			$2^{25}$ & 34\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -180,7 +189,7 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig1.png}
 
-		Figura 1: Tiempo de creación del Suffix Tree
+		Figura 1: Tiempo de creación del Suffix Tree para N = $2^{15..25}$
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -190,6 +199,7 @@
 	\subsection{Desempeño de operación \textit{Buscar}}
 
 % 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+	Los resultados para los tiempos de búsqueda en el Suffix Tree son los siguientes:
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -209,6 +219,14 @@
 			$2^{20}$ & X & X\\
 			\hline
 			$2^{21}$ & X & X\\
+			\hline
+			$2^{22}$ & X & X\\
+			\hline
+			$2^{23}$ & X & X\\
+			\hline
+			$2^{24}$ & X & X\\
+			\hline
+			$2^{25}$ & X & X\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -233,14 +251,39 @@
 
 	\subsection{Construcción del Suffix Tree}
 
-% 	// TODO: Verificar si el Suffix tree fue lineal o no
+% 	// TODO: Elegir versión de la conclusión
+
+	% IF LINEAL
+	Encontramos que el algoritmo de Ukkonen tarda X en N = $2^{15}$ caracteres, y se va duplicando (aproximadamente) cada vez que duplicamos la cantidad de caracteres, por lo que la
+	implementación se consiguió hacer en tiempo $O(n)$.
+
+	% IF INCONSISTENTE
+	Además, nuestra hipótesis de que el \textit{garbage collector} de Java interferiría con nuestros resultados es correcta, dado que cada vez que se corría el algoritmo para una
+	cantidad fija de caracteres variaba notablemente.
+
+	% IF NOT DONE
+	Nuestra implementación tuvo problemas al momento de ejecutarse, dado que no creaba correctamente los nodos internos. De esta forma el arbol se creaba demasiado rápido como para
+	ser coherente con la cantidad de enlaces que deberían existir en el Suffix Tree.
+
+	% IF ONLY WORDS
+	Nuestra implementación funciona bien cuando se usan palabras cortas, dado que es posible construir el Suffix Tree en tiempo $O(n)$ (puesto que al duplicar el largo de la palabra,
+	también se duplicaba el tiempo en nano-segundos para construirlo).
 
 	\subsection{Búsqueda en el Suffix Tree}
 
 % 	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
 
+	% IF TOO MUCH TIME
+	Encontramos a partir de los resultados que la búsqueda se tarda más que la construcción del Suffix Tree. Probablemente se deba a problemas con la consistencia del árbol, dado que
+	se espera que la búsqueda tome tiempo logarítmico respecto a la cantidad de caracteres en el texto.
+
+	% IF GOOD
+	Encontramos que la búsqueda toma tiempo logarítmico respecto a la cantidad de caracteres en el sufijo buscado. Esto se debe a que la estructura de árbol permite acelerar notablemente
+	las búsquedas, además de que el Suffix Tree hace un \textit{tradeoff} entre tiempo y espacio ocupado.
+
 	\subsection{Conclusiones}
 
 % 	// TODO: Resumir lo ``aprendido'' (?)
+% 	// TODO: Si no nos salió, explicar que podríamos hacer para arreglarlo (si tuvieramos más tiempo)
 
 \end{document}
