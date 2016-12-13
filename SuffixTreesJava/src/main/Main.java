@@ -19,7 +19,7 @@ public class Main {
 		Node t = x.run();
 		imprimirSuffixTree(t);
 
-		List<Integer> resp = x.buscar(t,"00");
+		/*List<Integer> resp = x.buscar(t,"00");
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
@@ -27,7 +27,7 @@ public class Main {
 			}
 		} else {
 			System.out.println("No se encontro el sufijo");
-		}
+		}*/
 
 		/**
 		 * TEST 2 text = (english.short) search = book
