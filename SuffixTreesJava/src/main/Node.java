@@ -1,13 +1,13 @@
 package main;
 
 public class Node {
-	private Node suffixLink;
+	private InternalNode suffixLink;
 	public int start;
-	private Last last;
+	public Last last;
 
 	public int finish;
 	protected boolean isLeaf;
-	Node[] children;
+	InternalNode[] children;
 	
 	private String data;
 	
@@ -21,7 +21,7 @@ public class Node {
 		last = Last.getInstance();
 		isLeaf = true;
 
-		children = new Node[128];
+		children = new InternalNode[128];
 	}
 
 /*	public int getPath(char s) {
@@ -36,15 +36,15 @@ public class Node {
 		return -1;
 	}*/
 
-	public void setLink(Node link) {
+	public void setLink(InternalNode link) {
 		suffixLink = link;
 	}
 	
-	public Node getLink() {
+	public InternalNode getLink() {
 		return suffixLink;
 	}
 
-	public void addChildren(Node node, int i) {
+	public void addChildren(InternalNode node, int i) {
 		children[i] = node;
 		isLeaf = false;
 	}
@@ -53,7 +53,7 @@ public class Node {
 		return isLeaf;
 	}
 
-	public Node getChildren(int i) {
+	public InternalNode getChildren(int i) {
 		return children[i];
 	}
 
