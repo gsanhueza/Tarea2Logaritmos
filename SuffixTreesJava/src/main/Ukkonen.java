@@ -246,13 +246,10 @@ public class Ukkonen {
 						}
 
 						else {
-
 							if (activeNode.getLink() != null)
 								activeNode = activeNode.getLink();
 							else
 								activeNode = root;
-
-
 						}
 					}
 

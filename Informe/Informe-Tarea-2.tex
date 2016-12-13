@@ -98,8 +98,6 @@
 
 	\section{Diseño Teórico}
 
-	Se crearon distintas clases de Java para cada comportamiento dentro del Suffix Tree, y una clase principal Main, donde se hacen las pruebas.
-
 	\subsection{Main}
 
 	En Main se crea un archivo de \textit{logging} para registrar el tiempo de creación del Suffix Tree y los resultados de búsqueda, a partir de un texto leído desde el disco.
@@ -112,14 +110,40 @@
 		\item Se registran los resultados de búsqueda.
 	\end{itemize}
 
-
 	\subsection{Ukkonen}
 
-	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+	Clase principal del algoritmo. Aquí se realiza la totalidad de la ejecución del algoritmo de Ukkonen.
 
-	\subsection{Otras clases}
+	Posee 5 métodos auxiliares:
+	\begin{itemize}
+		\item run(): Crea el Suffix Tree correspondiente, usando los siguientes métodos auxiliares.
+		\item getPath(char s, Node n): Retorna el camino desde el nodo n, con el caracter s.
+		\item search(String suffix, Node root): Busca el String \textit{suffix} en el nodo \textit{root}
+		\item getSuffixes(Node root, String suffix, int count): Método auxiliar para search. Busca recursivamente en los nodos por el sufijo \textit{suffix} usando
+		el número \textit{count} (usado para los caminos).
+		\item getLeafPath(Node n, int count): Retorna el camino a partir del nodo n, recorriendo \textit{count} nodos internos.
+	\end{itemize}
 
-	// TODO: Limpiar código de las clases que no se usan, para poner aquí las que sí usamos
+	\subsection{Last}
+
+	Esta clase es usada para mostrar el final de un camino.
+
+	\subsection{Node}
+
+	Esta clase se usa para almacenar la información correspondiente a cada sufijo. Puede ser o no ser una hoja. Es clase padre de \textit{InternalNode}.
+
+	\subsection{InternalNode}
+
+	Esta clase extiende de \textit{Node} para usarse como nodo interno (i.e., explícitamente \textbf{no es} una hoja).
+
+	\subsection{TextPreprocessor}
+
+	Esta clase recibe un texto como String y devuelve solamente los caracteres que coinciden con el \textit{regex} [a-zA-Z ]. El resto de los caracteres se eliminan
+	(entre los cuales están los saltos de línea, las puntuaciones y los espacios)
+
+	\subsection{Logger}
+
+	Esta clase recibe un nombre de archivo y escribe los datos que se le entregan a dicho archivo. Sirve para registrar la información necesaria para generar los gráficos del informe.
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -129,7 +153,7 @@
 
 	\subsection{Tiempo de Creación del Suffix Tree}
 
-	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
+% 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -156,7 +180,7 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig1.png}
 
-		Figura 1:
+		Figura 1: Tiempo de creación del Suffix Tree
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -165,7 +189,7 @@
 
 	\subsection{Desempeño de operación \textit{Buscar}}
 
-	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+% 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -192,13 +216,13 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig2.png}
 
-		Figura 2:
+		Figura 2: Promedio de operaciones por fase
 	\end{center}
 
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig3.png}
 
-		Figura 3:
+		Figura 3: Tiempo de búsqueda
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -209,14 +233,14 @@
 
 	\subsection{Construcción del Suffix Tree}
 
-	// TODO: Verificar si el Suffix tree fue lineal o no
+% 	// TODO: Verificar si el Suffix tree fue lineal o no
 
 	\subsection{Búsqueda en el Suffix Tree}
 
-	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
+% 	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
 
 	\subsection{Conclusiones}
 
-	// TODO: Resumir lo ``aprendido'' (?)
+% 	// TODO: Resumir lo ``aprendido'' (?)
 
 \end{document}
