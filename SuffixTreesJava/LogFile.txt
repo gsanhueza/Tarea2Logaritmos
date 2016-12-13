@@ -1,22 +1,33 @@
-Tiempo de construcción de SuffixTree = 4
+El texto procesado es de aprox. N = 2^15 caracteres
+Tiempo de construcción de SuffixTree = 5
 
+El texto procesado es de aprox. N = 2^16 caracteres
 Tiempo de construcción de SuffixTree = 2
 
-Tiempo de construcción de SuffixTree = 33
+El texto procesado es de aprox. N = 2^17 caracteres
+Tiempo de construcción de SuffixTree = 3
 
+El texto procesado es de aprox. N = 2^18 caracteres
+Tiempo de construcción de SuffixTree = 6
+
+El texto procesado es de aprox. N = 2^19 caracteres
 Tiempo de construcción de SuffixTree = 12
 
-Tiempo de construcción de SuffixTree = 7
+El texto procesado es de aprox. N = 2^20 caracteres
+Tiempo de construcción de SuffixTree = 15
 
-Tiempo de construcción de SuffixTree = 13
+El texto procesado es de aprox. N = 2^21 caracteres
+Tiempo de construcción de SuffixTree = 34
 
-Tiempo de construcción de SuffixTree = 25
+El texto procesado es de aprox. N = 2^22 caracteres
+Tiempo de construcción de SuffixTree = 44
 
-Tiempo de construcción de SuffixTree = 51
+El texto procesado es de aprox. N = 2^23 caracteres
+Tiempo de construcción de SuffixTree = 85
 
-Tiempo de construcción de SuffixTree = 89
+El texto procesado es de aprox. N = 2^24 caracteres
+Tiempo de construcción de SuffixTree = 171
 
-Tiempo de construcción de SuffixTree = 185
-
-Tiempo de construcción de SuffixTree = 344
+El texto procesado es de aprox. N = 2^25 caracteres
+Tiempo de construcción de SuffixTree = 345
 
