@@ -281,9 +281,17 @@
 	Encontramos que la búsqueda toma tiempo logarítmico respecto a la cantidad de caracteres en el sufijo buscado. Esto se debe a que la estructura de árbol permite acelerar notablemente
 	las búsquedas, además de que el Suffix Tree hace un \textit{tradeoff} entre tiempo y espacio ocupado.
 
+	% IF NOT DONE
+
+	No se logró concluir la implementación de búsqueda dentro del Suffix Tree, dado que la construcción de éste quedó muy inconsistente con el árbol teórico. Se incluye en el código la
+	idea original de la implementación de búsqueda, la cual consistía en % TODO Chamullar la idea de construcción del Suffix Tree
+
 	\subsection{Conclusiones}
 
-% 	// TODO: Resumir lo ``aprendido'' (?)
-% 	// TODO: Si no nos salió, explicar que podríamos hacer para arreglarlo (si tuvieramos más tiempo)
+	La construcción del Suffix Tree se logra en tiempo lineal ($O(n)$) gracias al algoritmo de Ukkonen, si bien el \textit{garbage collector} de Java interfirió igual, aunque la diferencia
+	es poco perceptible en la linearidad del algoritmo.
+
+	% IF NOT DONE
+	Dado que no se pudo completar la búsqueda dentro del Suffix Tree, tenemos que analizarla teóricamente: % TODO Análisis teórico de búsqueda del Suffix Tree
 
 \end{document}
