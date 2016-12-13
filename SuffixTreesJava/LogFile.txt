@@ -1,0 +1,2322 @@
+Tiempo de construcción de SuffixTree = 24704615
+
+Palabra buscada: thesoviets
+Largo de la palabra: 10
+Tiempo de búsqueda: 25319
+Número de ocurrencias: 0
+
+Palabra buscada: socialist
+Largo de la palabra: 9
+Tiempo de búsqueda: 17254
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 27839
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 15366
+Número de ocurrencias: 0
+
+Palabra buscada: theseunions
+Largo de la palabra: 11
+Tiempo de búsqueda: 19670
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 26512
+Número de ocurrencias: 0
+
+Palabra buscada: inevitably
+Largo de la palabra: 10
+Tiempo de búsqueda: 17324
+Número de ocurrencias: 1
+
+Palabra buscada: shades
+Largo de la palabra: 6
+Tiempo de búsqueda: 18643
+Número de ocurrencias: 1
+
+Palabra buscada: average
+Largo de la palabra: 7
+Tiempo de búsqueda: 12083
+Número de ocurrencias: 0
+
+Palabra buscada: partyin
+Largo de la palabra: 7
+Tiempo de búsqueda: 12950
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 18760
+Número de ocurrencias: 0
+
+Palabra buscada: with
+Largo de la palabra: 4
+Tiempo de búsqueda: 18539
+Número de ocurrencias: 0
+
+Palabra buscada: landowning
+Largo de la palabra: 10
+Tiempo de búsqueda: 13541
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 19316
+Número de ocurrencias: 0
+
+Palabra buscada: therevolution
+Largo de la palabra: 13
+Tiempo de búsqueda: 21560
+Número de ocurrencias: 0
+
+Palabra buscada: but
+Largo de la palabra: 3
+Tiempo de búsqueda: 11672
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 19528
+Número de ocurrencias: 0
+
+Palabra buscada: compete
+Largo de la palabra: 7
+Tiempo de búsqueda: 15799
+Número de ocurrencias: 1
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 11722
+Número de ocurrencias: 1
+
+Palabra buscada: to
+Largo de la palabra: 2
+Tiempo de búsqueda: 17174
+Número de ocurrencias: 0
+
+Palabra buscada: workingpeople
+Largo de la palabra: 13
+Tiempo de búsqueda: 17191
+Número de ocurrencias: 1
+
+Palabra buscada: their
+Largo de la palabra: 5
+Tiempo de búsqueda: 16916
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 17003
+Número de ocurrencias: 0
+
+Palabra buscada: it
+Largo de la palabra: 2
+Tiempo de búsqueda: 14707
+Número de ocurrencias: 1
+
+Palabra buscada: preaching
+Largo de la palabra: 9
+Tiempo de búsqueda: 13564
+Número de ocurrencias: 1
+
+Palabra buscada: continued
+Largo de la palabra: 9
+Tiempo de búsqueda: 15736
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 13820
+Número de ocurrencias: 0
+
+Palabra buscada: boththe
+Largo de la palabra: 7
+Tiempo de búsqueda: 11315
+Número de ocurrencias: 1
+
+Palabra buscada: tradeunions
+Largo de la palabra: 11
+Tiempo de búsqueda: 14915
+Número de ocurrencias: 0
+
+Palabra buscada: supported
+Largo de la palabra: 9
+Tiempo de búsqueda: 17273
+Número de ocurrencias: 0
+
+Palabra buscada: each
+Largo de la palabra: 4
+Tiempo de búsqueda: 12662
+Número de ocurrencias: 0
+
+Palabra buscada: sharingthe
+Largo de la palabra: 10
+Tiempo de búsqueda: 17428
+Número de ocurrencias: 1
+
+Palabra buscada: council
+Largo de la palabra: 7
+Tiempo de búsqueda: 14597
+Número de ocurrencias: 1
+
+Palabra buscada: however
+Largo de la palabra: 7
+Tiempo de búsqueda: 18975
+Número de ocurrencias: 1
+
+Palabra buscada: stood
+Largo de la palabra: 5
+Tiempo de búsqueda: 14114
+Número de ocurrencias: 0
+
+Palabra buscada: influence
+Largo de la palabra: 9
+Tiempo de búsqueda: 11999
+Número de ocurrencias: 1
+
+Palabra buscada: battalions
+Largo de la palabra: 10
+Tiempo de búsqueda: 10343
+Número de ocurrencias: 1
+
+Palabra buscada: use
+Largo de la palabra: 3
+Tiempo de búsqueda: 14714
+Número de ocurrencias: 1
+
+Palabra buscada: with
+Largo de la palabra: 4
+Tiempo de búsqueda: 15390
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 17920
+Número de ocurrencias: 0
+
+Palabra buscada: intensified
+Largo de la palabra: 11
+Tiempo de búsqueda: 12948
+Número de ocurrencias: 1
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 16547
+Número de ocurrencias: 1
+
+Palabra buscada: working
+Largo de la palabra: 7
+Tiempo de búsqueda: 24923
+Número de ocurrencias: 1
+
+Palabra buscada: demonstration
+Largo de la palabra: 13
+Tiempo de búsqueda: 11889
+Número de ocurrencias: 0
+
+Palabra buscada: figures
+Largo de la palabra: 7
+Tiempo de búsqueda: 12560
+Número de ocurrencias: 0
+
+Palabra buscada: so
+Largo de la palabra: 2
+Tiempo de búsqueda: 13617
+Número de ocurrencias: 0
+
+Palabra buscada: anything
+Largo de la palabra: 8
+Tiempo de búsqueda: 12318
+Número de ocurrencias: 0
+
+Palabra buscada: formed
+Largo de la palabra: 6
+Tiempo de búsqueda: 9111
+Número de ocurrencias: 0
+
+Palabra buscada: factoryshop
+Largo de la palabra: 11
+Tiempo de búsqueda: 9385
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 13313
+Número de ocurrencias: 0
+
+Palabra buscada: peasants
+Largo de la palabra: 8
+Tiempo de búsqueda: 17510
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 15165
+Número de ocurrencias: 0
+
+Palabra buscada: peasants
+Largo de la palabra: 8
+Tiempo de búsqueda: 14435
+Número de ocurrencias: 1
+
+Palabra buscada: soldiers
+Largo de la palabra: 8
+Tiempo de búsqueda: 13608
+Número de ocurrencias: 0
+
+Palabra buscada: councils
+Largo de la palabra: 8
+Tiempo de búsqueda: 19869
+Número de ocurrencias: 1
+
+Palabra buscada: workers
+Largo de la palabra: 7
+Tiempo de búsqueda: 23554
+Número de ocurrencias: 1
+
+Palabra buscada: i
+Largo de la palabra: 1
+Tiempo de búsqueda: 13235
+Número de ocurrencias: 1
+
+Palabra buscada: authority
+Largo de la palabra: 9
+Tiempo de búsqueda: 11486
+Número de ocurrencias: 0
+
+Palabra buscada: government
+Largo de la palabra: 10
+Tiempo de búsqueda: 10062
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 12417
+Número de ocurrencias: 1
+
+Palabra buscada: again
+Largo de la palabra: 5
+Tiempo de búsqueda: 11351
+Número de ocurrencias: 0
+
+Palabra buscada: detailed
+Largo de la palabra: 8
+Tiempo de búsqueda: 16357
+Número de ocurrencias: 0
+
+Palabra buscada: march
+Largo de la palabra: 5
+Tiempo de búsqueda: 13355
+Número de ocurrencias: 1
+
+Palabra buscada: seized
+Largo de la palabra: 6
+Tiempo de búsqueda: 14074
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 16509
+Número de ocurrencias: 1
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 14582
+Número de ocurrencias: 0
+
+Palabra buscada: programand
+Largo de la palabra: 10
+Tiempo de búsqueda: 13495
+Número de ocurrencias: 1
+
+Palabra buscada: nationalistic
+Largo de la palabra: 13
+Tiempo de búsqueda: 17257
+Número de ocurrencias: 0
+
+Palabra buscada: institutions
+Largo de la palabra: 12
+Tiempo de búsqueda: 12154
+Número de ocurrencias: 1
+
+Palabra buscada: factories
+Largo de la palabra: 9
+Tiempo de búsqueda: 8779
+Número de ocurrencias: 0
+
+Palabra buscada: there
+Largo de la palabra: 5
+Tiempo de búsqueda: 19959
+Número de ocurrencias: 0
+
+Palabra buscada: society
+Largo de la palabra: 7
+Tiempo de búsqueda: 19161
+Número de ocurrencias: 0
+
+Palabra buscada: cities
+Largo de la palabra: 6
+Tiempo de búsqueda: 11328
+Número de ocurrencias: 0
+
+Palabra buscada: theworld
+Largo de la palabra: 8
+Tiempo de búsqueda: 17431
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 12971
+Número de ocurrencias: 1
+
+Palabra buscada: considering
+Largo de la palabra: 11
+Tiempo de búsqueda: 16535
+Número de ocurrencias: 1
+
+Palabra buscada: world
+Largo de la palabra: 5
+Tiempo de búsqueda: 21677
+Número de ocurrencias: 1
+
+Palabra buscada: multiplicity
+Largo de la palabra: 12
+Tiempo de búsqueda: 13523
+Número de ocurrencias: 1
+
+Palabra buscada: when
+Largo de la palabra: 4
+Tiempo de búsqueda: 14952
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 11149
+Número de ocurrencias: 1
+
+Palabra buscada: was
+Largo de la palabra: 3
+Tiempo de búsqueda: 21246
+Número de ocurrencias: 1
+
+Palabra buscada: savage
+Largo de la palabra: 6
+Tiempo de búsqueda: 18334
+Número de ocurrencias: 0
+
+Palabra buscada: duma
+Largo de la palabra: 4
+Tiempo de búsqueda: 23637
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 30335
+Número de ocurrencias: 0
+
+Palabra buscada: factory
+Largo de la palabra: 7
+Tiempo de búsqueda: 14323
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 31380
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 34173
+Número de ocurrencias: 1
+
+Palabra buscada: blindobedience
+Largo de la palabra: 14
+Tiempo de búsqueda: 17577
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 20500
+Número de ocurrencias: 0
+
+Palabra buscada: probably
+Largo de la palabra: 8
+Tiempo de búsqueda: 20766
+Número de ocurrencias: 1
+
+Palabra buscada: reluctant
+Largo de la palabra: 9
+Tiempo de búsqueda: 18108
+Número de ocurrencias: 0
+
+Palabra buscada: transference
+Largo de la palabra: 12
+Tiempo de búsqueda: 14339
+Número de ocurrencias: 0
+
+Palabra buscada: allrussian
+Largo de la palabra: 10
+Tiempo de búsqueda: 16515
+Número de ocurrencias: 1
+
+Palabra buscada: presidium
+Largo de la palabra: 9
+Tiempo de búsqueda: 13865
+Número de ocurrencias: 1
+
+Palabra buscada: prepared
+Largo de la palabra: 8
+Tiempo de búsqueda: 12472
+Número de ocurrencias: 1
+
+Palabra buscada: manydeath
+Largo de la palabra: 9
+Tiempo de búsqueda: 11847
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 22130
+Número de ocurrencias: 0
+
+Palabra buscada: socalled
+Largo de la palabra: 8
+Tiempo de búsqueda: 17083
+Número de ocurrencias: 0
+
+Palabra buscada: their
+Largo de la palabra: 5
+Tiempo de búsqueda: 18807
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 12412
+Número de ocurrencias: 1
+
+Palabra buscada: there
+Largo de la palabra: 5
+Tiempo de búsqueda: 22929
+Número de ocurrencias: 0
+
+Palabra buscada: army
+Largo de la palabra: 4
+Tiempo de búsqueda: 11723
+Número de ocurrencias: 0
+
+Palabra buscada: moderate
+Largo de la palabra: 8
+Tiempo de búsqueda: 13326
+Número de ocurrencias: 1
+
+Palabra buscada: when
+Largo de la palabra: 4
+Tiempo de búsqueda: 14757
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 15734
+Número de ocurrencias: 1
+
+Palabra buscada: parenthesesthe
+Largo de la palabra: 14
+Tiempo de búsqueda: 16747
+Número de ocurrencias: 1
+
+Palabra buscada: russia
+Largo de la palabra: 6
+Tiempo de búsqueda: 14131
+Número de ocurrencias: 0
+
+Palabra buscada: bolshevik
+Largo de la palabra: 9
+Tiempo de búsqueda: 12216
+Número de ocurrencias: 1
+
+Palabra buscada: compensation
+Largo de la palabra: 12
+Tiempo de búsqueda: 14854
+Número de ocurrencias: 1
+
+Palabra buscada: party
+Largo de la palabra: 5
+Tiempo de búsqueda: 13140
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 11202
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 17954
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 17667
+Número de ocurrencias: 1
+
+Palabra buscada: unions
+Largo de la palabra: 6
+Tiempo de búsqueda: 11730
+Número de ocurrencias: 1
+
+Palabra buscada: from
+Largo de la palabra: 4
+Tiempo de búsqueda: 9433
+Número de ocurrencias: 0
+
+Palabra buscada: it
+Largo de la palabra: 2
+Tiempo de búsqueda: 12562
+Número de ocurrencias: 1
+
+Palabra buscada: man
+Largo de la palabra: 3
+Tiempo de búsqueda: 11625
+Número de ocurrencias: 1
+
+Palabra buscada: i
+Largo de la palabra: 1
+Tiempo de búsqueda: 10632
+Número de ocurrencias: 1
+
+Palabra buscada: get
+Largo de la palabra: 3
+Tiempo de búsqueda: 12546
+Número de ocurrencias: 0
+
+Palabra buscada: power
+Largo de la palabra: 5
+Tiempo de búsqueda: 12320
+Número de ocurrencias: 1
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 10437
+Número de ocurrencias: 1
+
+Palabra buscada: committee
+Largo de la palabra: 9
+Tiempo de búsqueda: 14146
+Número de ocurrencias: 1
+
+Palabra buscada: theappendix
+Largo de la palabra: 11
+Tiempo de búsqueda: 16617
+Número de ocurrencias: 0
+
+Palabra buscada: etc
+Largo de la palabra: 3
+Tiempo de búsqueda: 18464
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 15442
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 15621
+Número de ocurrencias: 0
+
+Palabra buscada: course
+Largo de la palabra: 6
+Tiempo de búsqueda: 18577
+Número de ocurrencias: 1
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 19396
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 10583
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 18287
+Número de ocurrencias: 0
+
+Palabra buscada: thearmies
+Largo de la palabra: 9
+Tiempo de búsqueda: 21247
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 16501
+Número de ocurrencias: 0
+
+Palabra buscada: ofunions
+Largo de la palabra: 8
+Tiempo de búsqueda: 13128
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 13687
+Número de ocurrencias: 0
+
+Palabra buscada: votes
+Largo de la palabra: 5
+Tiempo de búsqueda: 13752
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 17228
+Número de ocurrencias: 0
+
+Palabra buscada: theentire
+Largo de la palabra: 9
+Tiempo de búsqueda: 15920
+Número de ocurrencias: 0
+
+Palabra buscada: confusionincident
+Largo de la palabra: 17
+Tiempo de búsqueda: 17148
+Número de ocurrencias: 1
+
+Palabra buscada: cabinet
+Largo de la palabra: 7
+Tiempo de búsqueda: 14894
+Número de ocurrencias: 0
+
+Palabra buscada: when
+Largo de la palabra: 4
+Tiempo de búsqueda: 13484
+Número de ocurrencias: 0
+
+Palabra buscada: at
+Largo de la palabra: 2
+Tiempo de búsqueda: 15708
+Número de ocurrencias: 1
+
+Palabra buscada: true
+Largo de la palabra: 4
+Tiempo de búsqueda: 13617
+Número de ocurrencias: 0
+
+Palabra buscada: background
+Largo de la palabra: 10
+Tiempo de búsqueda: 11162
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 17095
+Número de ocurrencias: 0
+
+Palabra buscada: tradition
+Largo de la palabra: 9
+Tiempo de búsqueda: 13978
+Número de ocurrencias: 0
+
+Palabra buscada: floorleaders
+Largo de la palabra: 12
+Tiempo de búsqueda: 9674
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 12960
+Número de ocurrencias: 1
+
+Palabra buscada: workers
+Largo de la palabra: 7
+Tiempo de búsqueda: 17283
+Número de ocurrencias: 1
+
+Palabra buscada: trotzky
+Largo de la palabra: 7
+Tiempo de búsqueda: 25106
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 17457
+Número de ocurrencias: 0
+
+Palabra buscada: when
+Largo de la palabra: 4
+Tiempo de búsqueda: 14599
+Número de ocurrencias: 0
+
+Palabra buscada: to
+Largo de la palabra: 2
+Tiempo de búsqueda: 14013
+Número de ocurrencias: 0
+
+Palabra buscada: limited
+Largo de la palabra: 7
+Tiempo de búsqueda: 15457
+Número de ocurrencias: 0
+
+Palabra buscada: alwaysgrants
+Largo de la palabra: 12
+Tiempo de búsqueda: 15639
+Número de ocurrencias: 1
+
+Palabra buscada: these
+Largo de la palabra: 5
+Tiempo de búsqueda: 17867
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 20839
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 10982
+Número de ocurrencias: 0
+
+Palabra buscada: destructive
+Largo de la palabra: 11
+Tiempo de búsqueda: 11086
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 10966
+Número de ocurrencias: 0
+
+Palabra buscada: done
+Largo de la palabra: 4
+Tiempo de búsqueda: 11179
+Número de ocurrencias: 0
+
+Palabra buscada: revolution
+Largo de la palabra: 10
+Tiempo de búsqueda: 15696
+Número de ocurrencias: 0
+
+Palabra buscada: educated
+Largo de la palabra: 8
+Tiempo de búsqueda: 14632
+Número de ocurrencias: 1
+
+Palabra buscada: allied
+Largo de la palabra: 6
+Tiempo de búsqueda: 14058
+Número de ocurrencias: 1
+
+Palabra buscada: was
+Largo de la palabra: 3
+Tiempo de búsqueda: 16966
+Número de ocurrencias: 1
+
+Palabra buscada: isknown
+Largo de la palabra: 7
+Tiempo de búsqueda: 10881
+Número de ocurrencias: 1
+
+Palabra buscada: bythe
+Largo de la palabra: 5
+Tiempo de búsqueda: 15333
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 13906
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 21455
+Número de ocurrencias: 0
+
+Palabra buscada: estates
+Largo de la palabra: 7
+Tiempo de búsqueda: 13993
+Número de ocurrencias: 0
+
+Palabra buscada: it
+Largo de la palabra: 2
+Tiempo de búsqueda: 12550
+Número de ocurrencias: 1
+
+Palabra buscada: cadets
+Largo de la palabra: 6
+Tiempo de búsqueda: 17161
+Número de ocurrencias: 0
+
+Palabra buscada: its
+Largo de la palabra: 3
+Tiempo de búsqueda: 12269
+Número de ocurrencias: 1
+
+Palabra buscada: democratic
+Largo de la palabra: 10
+Tiempo de búsqueda: 14314
+Número de ocurrencias: 0
+
+Palabra buscada: cabinet
+Largo de la palabra: 7
+Tiempo de búsqueda: 13118
+Número de ocurrencias: 0
+
+Palabra buscada: andmore
+Largo de la palabra: 7
+Tiempo de búsqueda: 13524
+Número de ocurrencias: 0
+
+Palabra buscada: would
+Largo de la palabra: 5
+Tiempo de búsqueda: 26176
+Número de ocurrencias: 1
+
+Palabra buscada: stood
+Largo de la palabra: 5
+Tiempo de búsqueda: 15835
+Número de ocurrencias: 0
+
+Palabra buscada: usually
+Largo de la palabra: 7
+Tiempo de búsqueda: 13825
+Número de ocurrencias: 1
+
+Palabra buscada: thisbook
+Largo de la palabra: 8
+Tiempo de búsqueda: 22179
+Número de ocurrencias: 1
+
+Palabra buscada: mostly
+Largo de la palabra: 6
+Tiempo de búsqueda: 348501
+Número de ocurrencias: 1
+
+Palabra buscada: step
+Largo de la palabra: 4
+Tiempo de búsqueda: 24890
+Número de ocurrencias: 0
+
+Palabra buscada: during
+Largo de la palabra: 6
+Tiempo de búsqueda: 23440
+Número de ocurrencias: 1
+
+Palabra buscada: force
+Largo de la palabra: 5
+Tiempo de búsqueda: 11235
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 12741
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 13422
+Número de ocurrencias: 1
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 12699
+Número de ocurrencias: 1
+
+Palabra buscada: committeesin
+Largo de la palabra: 12
+Tiempo de búsqueda: 23019
+Número de ocurrencias: 1
+
+Palabra buscada: point
+Largo de la palabra: 5
+Tiempo de búsqueda: 14363
+Número de ocurrencias: 1
+
+Palabra buscada: peculiar
+Largo de la palabra: 8
+Tiempo de búsqueda: 17393
+Número de ocurrencias: 1
+
+Palabra buscada: creekand
+Largo de la palabra: 8
+Tiempo de búsqueda: 13763
+Número de ocurrencias: 0
+
+Palabra buscada: learnedabout
+Largo de la palabra: 12
+Tiempo de búsqueda: 15639
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 13162
+Número de ocurrencias: 1
+
+Palabra buscada: thegreat
+Largo de la palabra: 8
+Tiempo de búsqueda: 24842
+Número de ocurrencias: 0
+
+Palabra buscada: more
+Largo de la palabra: 4
+Tiempo de búsqueda: 13070
+Número de ocurrencias: 1
+
+Palabra buscada: thus
+Largo de la palabra: 4
+Tiempo de búsqueda: 24115
+Número de ocurrencias: 0
+
+Palabra buscada: martov
+Largo de la palabra: 6
+Tiempo de búsqueda: 12950
+Número de ocurrencias: 1
+
+Palabra buscada: ministers
+Largo de la palabra: 9
+Tiempo de búsqueda: 12850
+Número de ocurrencias: 1
+
+Palabra buscada: also
+Largo de la palabra: 4
+Tiempo de búsqueda: 19695
+Número de ocurrencias: 1
+
+Palabra buscada: peasants
+Largo de la palabra: 8
+Tiempo de búsqueda: 13051
+Número de ocurrencias: 1
+
+Palabra buscada: lead
+Largo de la palabra: 4
+Tiempo de búsqueda: 14866
+Número de ocurrencias: 0
+
+Palabra buscada: employees
+Largo de la palabra: 9
+Tiempo de búsqueda: 14167
+Número de ocurrencias: 0
+
+Palabra buscada: imperialistic
+Largo de la palabra: 13
+Tiempo de búsqueda: 12299
+Número de ocurrencias: 1
+
+Palabra buscada: earlier
+Largo de la palabra: 7
+Tiempo de búsqueda: 17414
+Número de ocurrencias: 0
+
+Palabra buscada: also
+Largo de la palabra: 4
+Tiempo de búsqueda: 17022
+Número de ocurrencias: 1
+
+Palabra buscada: hold
+Largo de la palabra: 4
+Tiempo de búsqueda: 19016
+Número de ocurrencias: 1
+
+Palabra buscada: broke
+Largo de la palabra: 5
+Tiempo de búsqueda: 11670
+Número de ocurrencias: 1
+
+Palabra buscada: committees
+Largo de la palabra: 10
+Tiempo de búsqueda: 19765
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 21399
+Número de ocurrencias: 0
+
+Palabra buscada: instead
+Largo de la palabra: 7
+Tiempo de búsqueda: 12685
+Número de ocurrencias: 1
+
+Palabra buscada: portrait
+Largo de la palabra: 8
+Tiempo de búsqueda: 12872
+Número de ocurrencias: 1
+
+Palabra buscada: story
+Largo de la palabra: 5
+Tiempo de búsqueda: 16339
+Número de ocurrencias: 0
+
+Palabra buscada: orprovincial
+Largo de la palabra: 12
+Tiempo de búsqueda: 19562
+Número de ocurrencias: 1
+
+Palabra buscada: committee
+Largo de la palabra: 9
+Tiempo de búsqueda: 17024
+Número de ocurrencias: 1
+
+Palabra buscada: who
+Largo de la palabra: 3
+Tiempo de búsqueda: 18901
+Número de ocurrencias: 0
+
+Palabra buscada: these
+Largo de la palabra: 5
+Tiempo de búsqueda: 21212
+Número de ocurrencias: 0
+
+Palabra buscada: continue
+Largo de la palabra: 8
+Tiempo de búsqueda: 17869
+Número de ocurrencias: 1
+
+Palabra buscada: soldiers
+Largo de la palabra: 8
+Tiempo de búsqueda: 14831
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 16805
+Número de ocurrencias: 1
+
+Palabra buscada: movement
+Largo de la palabra: 8
+Tiempo de búsqueda: 13277
+Número de ocurrencias: 1
+
+Palabra buscada: so
+Largo de la palabra: 2
+Tiempo de búsqueda: 15727
+Número de ocurrencias: 0
+
+Palabra buscada: days
+Largo de la palabra: 4
+Tiempo de búsqueda: 32070
+Número de ocurrencias: 1
+
+Palabra buscada: programand
+Largo de la palabra: 10
+Tiempo de búsqueda: 13938
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 16444
+Número de ocurrencias: 0
+
+Palabra buscada: soviet
+Largo de la palabra: 6
+Tiempo de búsqueda: 19790
+Número de ocurrencias: 0
+
+Palabra buscada: but
+Largo de la palabra: 3
+Tiempo de búsqueda: 11717
+Número de ocurrencias: 1
+
+Palabra buscada: know
+Largo de la palabra: 4
+Tiempo de búsqueda: 12407
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 21691
+Número de ocurrencias: 0
+
+Palabra buscada: central
+Largo de la palabra: 7
+Tiempo de búsqueda: 16192
+Número de ocurrencias: 1
+
+Palabra buscada: any
+Largo de la palabra: 3
+Tiempo de búsqueda: 16837
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 15400
+Número de ocurrencias: 0
+
+Palabra buscada: english
+Largo de la palabra: 7
+Tiempo de búsqueda: 81976
+Número de ocurrencias: 1
+
+Palabra buscada: neutral
+Largo de la palabra: 7
+Tiempo de búsqueda: 5240
+Número de ocurrencias: 0
+
+Palabra buscada: development
+Largo de la palabra: 11
+Tiempo de búsqueda: 4490
+Número de ocurrencias: 0
+
+Palabra buscada: workingpeople
+Largo de la palabra: 13
+Tiempo de búsqueda: 9876
+Número de ocurrencias: 1
+
+Palabra buscada: compromisethe
+Largo de la palabra: 13
+Tiempo de búsqueda: 8462
+Número de ocurrencias: 1
+
+Palabra buscada: chapter
+Largo de la palabra: 7
+Tiempo de búsqueda: 4273
+Número de ocurrencias: 0
+
+Palabra buscada: itdoes
+Largo de la palabra: 6
+Tiempo de búsqueda: 6262
+Número de ocurrencias: 1
+
+Palabra buscada: reedredactors
+Largo de la palabra: 13
+Tiempo de búsqueda: 5432
+Número de ocurrencias: 0
+
+Palabra buscada: explanations
+Largo de la palabra: 12
+Tiempo de búsqueda: 9173
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 4943
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 6301
+Número de ocurrencias: 1
+
+Palabra buscada: corpshad
+Largo de la palabra: 8
+Tiempo de búsqueda: 11094
+Número de ocurrencias: 1
+
+Palabra buscada: needed
+Largo de la palabra: 6
+Tiempo de búsqueda: 5237
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 4642
+Número de ocurrencias: 0
+
+Palabra buscada: composed
+Largo de la palabra: 8
+Tiempo de búsqueda: 8134
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 4394
+Número de ocurrencias: 0
+
+Palabra buscada: be
+Largo de la palabra: 2
+Tiempo de búsqueda: 5449
+Número de ocurrencias: 1
+
+Palabra buscada: been
+Largo de la palabra: 4
+Tiempo de búsqueda: 13825
+Número de ocurrencias: 1
+
+Palabra buscada: transference
+Largo de la palabra: 12
+Tiempo de búsqueda: 11266
+Número de ocurrencias: 0
+
+Palabra buscada: isnot
+Largo de la palabra: 5
+Tiempo de búsqueda: 8256
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 7200
+Número de ocurrencias: 0
+
+Palabra buscada: that
+Largo de la palabra: 4
+Tiempo de búsqueda: 11106
+Número de ocurrencias: 1
+
+Palabra buscada: thepower
+Largo de la palabra: 8
+Tiempo de búsqueda: 6899
+Número de ocurrencias: 0
+
+Palabra buscada: that
+Largo de la palabra: 4
+Tiempo de búsqueda: 10518
+Número de ocurrencias: 1
+
+Palabra buscada: smashed
+Largo de la palabra: 7
+Tiempo de búsqueda: 5541
+Número de ocurrencias: 0
+
+Palabra buscada: committees
+Largo de la palabra: 10
+Tiempo de búsqueda: 11262
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6490
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 23953
+Número de ocurrencias: 1
+
+Palabra buscada: it
+Largo de la palabra: 2
+Tiempo de búsqueda: 5988
+Número de ocurrencias: 1
+
+Palabra buscada: called
+Largo de la palabra: 6
+Tiempo de búsqueda: 4270
+Número de ocurrencias: 0
+
+Palabra buscada: two
+Largo de la palabra: 3
+Tiempo de búsqueda: 5020
+Número de ocurrencias: 0
+
+Palabra buscada: structure
+Largo de la palabra: 9
+Tiempo de búsqueda: 4886
+Número de ocurrencias: 0
+
+Palabra buscada: government
+Largo de la palabra: 10
+Tiempo de búsqueda: 3378
+Número de ocurrencias: 0
+
+Palabra buscada: totake
+Largo de la palabra: 6
+Tiempo de búsqueda: 15494
+Número de ocurrencias: 0
+
+Palabra buscada: continued
+Largo de la palabra: 9
+Tiempo de búsqueda: 8962
+Número de ocurrencias: 1
+
+Palabra buscada: know
+Largo de la palabra: 4
+Tiempo de búsqueda: 5951
+Número de ocurrencias: 1
+
+Palabra buscada: allied
+Largo de la palabra: 6
+Tiempo de búsqueda: 7521
+Número de ocurrencias: 1
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 5455
+Número de ocurrencias: 1
+
+Palabra buscada: first
+Largo de la palabra: 5
+Tiempo de búsqueda: 3276
+Número de ocurrencias: 0
+
+Palabra buscada: tied
+Largo de la palabra: 4
+Tiempo de búsqueda: 4958
+Número de ocurrencias: 0
+
+Palabra buscada: their
+Largo de la palabra: 5
+Tiempo de búsqueda: 5931
+Número de ocurrencias: 0
+
+Palabra buscada: from
+Largo de la palabra: 4
+Tiempo de búsqueda: 3140
+Número de ocurrencias: 0
+
+Palabra buscada: who
+Largo de la palabra: 3
+Tiempo de búsqueda: 5022
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4973
+Número de ocurrencias: 0
+
+Palabra buscada: off
+Largo de la palabra: 3
+Tiempo de búsqueda: 4734
+Número de ocurrencias: 0
+
+Palabra buscada: andexperienced
+Largo de la palabra: 14
+Tiempo de búsqueda: 4213
+Número de ocurrencias: 0
+
+Palabra buscada: persisted
+Largo de la palabra: 9
+Tiempo de búsqueda: 7205
+Número de ocurrencias: 1
+
+Palabra buscada: imperial
+Largo de la palabra: 8
+Tiempo de búsqueda: 5996
+Número de ocurrencias: 1
+
+Palabra buscada: tsar
+Largo de la palabra: 4
+Tiempo de búsqueda: 4931
+Número de ocurrencias: 0
+
+Palabra buscada: note
+Largo de la palabra: 4
+Tiempo de búsqueda: 8790
+Número de ocurrencias: 1
+
+Palabra buscada: thestory
+Largo de la palabra: 8
+Tiempo de búsqueda: 7011
+Número de ocurrencias: 0
+
+Palabra buscada: must
+Largo de la palabra: 4
+Tiempo de búsqueda: 6059
+Número de ocurrencias: 1
+
+Palabra buscada: which
+Largo de la palabra: 5
+Tiempo de búsqueda: 4918
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6642
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 6709
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 10325
+Número de ocurrencias: 0
+
+Palabra buscada: definitions
+Largo de la palabra: 11
+Tiempo de búsqueda: 5466
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6525
+Número de ocurrencias: 0
+
+Palabra buscada: after
+Largo de la palabra: 5
+Tiempo de búsqueda: 3944
+Número de ocurrencias: 0
+
+Palabra buscada: growth
+Largo de la palabra: 6
+Tiempo de búsqueda: 3184
+Número de ocurrencias: 0
+
+Palabra buscada: frontafter
+Largo de la palabra: 10
+Tiempo de búsqueda: 2977
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6059
+Número de ocurrencias: 0
+
+Palabra buscada: acted
+Largo de la palabra: 5
+Tiempo de búsqueda: 4024
+Número de ocurrencias: 0
+
+Palabra buscada: thesocialist
+Largo de la palabra: 12
+Tiempo de búsqueda: 6298
+Número de ocurrencias: 0
+
+Palabra buscada: sovietsnaturally
+Largo de la palabra: 16
+Tiempo de búsqueda: 4767
+Número de ocurrencias: 0
+
+Palabra buscada: true
+Largo de la palabra: 4
+Tiempo de búsqueda: 4719
+Número de ocurrencias: 0
+
+Palabra buscada: russia
+Largo de la palabra: 6
+Tiempo de búsqueda: 4808
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6289
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4931
+Número de ocurrencias: 0
+
+Palabra buscada: that
+Largo de la palabra: 4
+Tiempo de búsqueda: 11508
+Número de ocurrencias: 1
+
+Palabra buscada: by
+Largo de la palabra: 2
+Tiempo de búsqueda: 5642
+Número de ocurrencias: 1
+
+Palabra buscada: leader
+Largo de la palabra: 6
+Tiempo de búsqueda: 4781
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4721
+Número de ocurrencias: 0
+
+Palabra buscada: butfull
+Largo de la palabra: 7
+Tiempo de búsqueda: 5646
+Número de ocurrencias: 1
+
+Palabra buscada: sovietgovernment
+Largo de la palabra: 16
+Tiempo de búsqueda: 5058
+Número de ocurrencias: 0
+
+Palabra buscada: their
+Largo de la palabra: 5
+Tiempo de búsqueda: 6167
+Número de ocurrencias: 0
+
+Palabra buscada: unions
+Largo de la palabra: 6
+Tiempo de búsqueda: 7708
+Número de ocurrencias: 1
+
+Palabra buscada: educated
+Largo de la palabra: 8
+Tiempo de búsqueda: 7787
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 4021
+Número de ocurrencias: 0
+
+Palabra buscada: they
+Largo de la palabra: 4
+Tiempo de búsqueda: 5902
+Número de ocurrencias: 0
+
+Palabra buscada: socialists
+Largo de la palabra: 10
+Tiempo de búsqueda: 4338
+Número de ocurrencias: 0
+
+Palabra buscada: abolish
+Largo de la palabra: 7
+Tiempo de búsqueda: 4235
+Número de ocurrencias: 0
+
+Palabra buscada: trotzky
+Largo de la palabra: 7
+Tiempo de búsqueda: 4607
+Número de ocurrencias: 0
+
+Palabra buscada: at
+Largo de la palabra: 2
+Tiempo de búsqueda: 8356
+Número de ocurrencias: 1
+
+Palabra buscada: novemberrevolution
+Largo de la palabra: 18
+Tiempo de búsqueda: 8130
+Número de ocurrencias: 1
+
+Palabra buscada: plekhanov
+Largo de la palabra: 9
+Tiempo de búsqueda: 5931
+Número de ocurrencias: 1
+
+Palabra buscada: group
+Largo de la palabra: 5
+Tiempo de búsqueda: 3272
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 8579
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6409
+Número de ocurrencias: 0
+
+Palabra buscada: theallrussian
+Largo de la palabra: 13
+Tiempo de búsqueda: 9577
+Número de ocurrencias: 0
+
+Palabra buscada: to
+Largo de la palabra: 2
+Tiempo de búsqueda: 4664
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 6418
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4303
+Número de ocurrencias: 0
+
+Palabra buscada: other
+Largo de la palabra: 5
+Tiempo de búsqueda: 7494
+Número de ocurrencias: 1
+
+Palabra buscada: thelabour
+Largo de la palabra: 9
+Tiempo de búsqueda: 5604
+Número de ocurrencias: 0
+
+Palabra buscada: themselves
+Largo de la palabra: 10
+Tiempo de búsqueda: 4990
+Número de ocurrencias: 0
+
+Palabra buscada: experience
+Largo de la palabra: 10
+Tiempo de búsqueda: 8095
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 7253
+Número de ocurrencias: 0
+
+Palabra buscada: tried
+Largo de la palabra: 5
+Tiempo de búsqueda: 4192
+Número de ocurrencias: 0
+
+Palabra buscada: chapter
+Largo de la palabra: 7
+Tiempo de búsqueda: 4120
+Número de ocurrencias: 0
+
+Palabra buscada: group
+Largo de la palabra: 5
+Tiempo de búsqueda: 2972
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 30331
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6956
+Número de ocurrencias: 0
+
+Palabra buscada: seems
+Largo de la palabra: 5
+Tiempo de búsqueda: 4695
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 4656
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4681
+Número de ocurrencias: 0
+
+Palabra buscada: inevitability
+Largo de la palabra: 13
+Tiempo de búsqueda: 9704
+Número de ocurrencias: 1
+
+Palabra buscada: merely
+Largo de la palabra: 6
+Tiempo de búsqueda: 6092
+Número de ocurrencias: 1
+
+Palabra buscada: reader
+Largo de la palabra: 6
+Tiempo de búsqueda: 4745
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6052
+Número de ocurrencias: 0
+
+Palabra buscada: capital
+Largo de la palabra: 7
+Tiempo de búsqueda: 3957
+Número de ocurrencias: 0
+
+Palabra buscada: contents
+Largo de la palabra: 8
+Tiempo de búsqueda: 7145
+Número de ocurrencias: 1
+
+Palabra buscada: internal
+Largo de la palabra: 8
+Tiempo de búsqueda: 5964
+Número de ocurrencias: 1
+
+Palabra buscada: to
+Largo de la palabra: 2
+Tiempo de búsqueda: 4567
+Número de ocurrencias: 0
+
+Palabra buscada: on
+Largo de la palabra: 2
+Tiempo de búsqueda: 4550
+Número de ocurrencias: 0
+
+Palabra buscada: manufacturers
+Largo de la palabra: 13
+Tiempo de búsqueda: 5884
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5605
+Número de ocurrencias: 0
+
+Palabra buscada: it
+Largo de la palabra: 2
+Tiempo de búsqueda: 5428
+Número de ocurrencias: 1
+
+Palabra buscada: majority
+Largo de la palabra: 8
+Tiempo de búsqueda: 5024
+Número de ocurrencias: 1
+
+Palabra buscada: outlining
+Largo de la palabra: 9
+Tiempo de búsqueda: 4328
+Número de ocurrencias: 0
+
+Palabra buscada: from
+Largo de la palabra: 4
+Tiempo de búsqueda: 2862
+Número de ocurrencias: 0
+
+Palabra buscada: went
+Largo de la palabra: 4
+Tiempo de búsqueda: 4607
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4049
+Número de ocurrencias: 0
+
+Palabra buscada: never
+Largo de la palabra: 5
+Tiempo de búsqueda: 4410
+Número de ocurrencias: 0
+
+Palabra buscada: wherever
+Largo de la palabra: 8
+Tiempo de búsqueda: 4799
+Número de ocurrencias: 0
+
+Palabra buscada: itself
+Largo de la palabra: 6
+Tiempo de búsqueda: 5830
+Número de ocurrencias: 1
+
+Palabra buscada: deserts
+Largo de la palabra: 7
+Tiempo de búsqueda: 6302
+Número de ocurrencias: 0
+
+Palabra buscada: grew
+Largo de la palabra: 4
+Tiempo de búsqueda: 2535
+Número de ocurrencias: 0
+
+Palabra buscada: constructive
+Largo de la palabra: 12
+Tiempo de búsqueda: 6648
+Número de ocurrencias: 1
+
+Palabra buscada: those
+Largo de la palabra: 5
+Tiempo de búsqueda: 5144
+Número de ocurrencias: 0
+
+Palabra buscada: william
+Largo de la palabra: 7
+Tiempo de búsqueda: 3959
+Número de ocurrencias: 0
+
+Palabra buscada: must
+Largo de la palabra: 4
+Tiempo de búsqueda: 5419
+Número de ocurrencias: 1
+
+Palabra buscada: essential
+Largo de la palabra: 9
+Tiempo de búsqueda: 3922
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5316
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5099
+Número de ocurrencias: 0
+
+Palabra buscada: intellectuals
+Largo de la palabra: 13
+Tiempo de búsqueda: 5069
+Número de ocurrencias: 1
+
+Palabra buscada: democracies
+Largo de la palabra: 11
+Tiempo de búsqueda: 3720
+Número de ocurrencias: 0
+
+Palabra buscada: redguards
+Largo de la palabra: 9
+Tiempo de búsqueda: 3847
+Número de ocurrencias: 0
+
+Palabra buscada: enough
+Largo de la palabra: 6
+Tiempo de búsqueda: 6643
+Número de ocurrencias: 1
+
+Palabra buscada: thenovaya
+Largo de la palabra: 9
+Tiempo de búsqueda: 4791
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 4514
+Número de ocurrencias: 0
+
+Palabra buscada: foreign
+Largo de la palabra: 7
+Tiempo de búsqueda: 2299
+Número de ocurrencias: 0
+
+Palabra buscada: ruthless
+Largo de la palabra: 8
+Tiempo de búsqueda: 3733
+Número de ocurrencias: 0
+
+Palabra buscada: must
+Largo de la palabra: 4
+Tiempo de búsqueda: 6132
+Número de ocurrencias: 1
+
+Palabra buscada: imperial
+Largo de la palabra: 8
+Tiempo de búsqueda: 5242
+Número de ocurrencias: 1
+
+Palabra buscada: battle
+Largo de la palabra: 6
+Tiempo de búsqueda: 5037
+Número de ocurrencias: 1
+
+Palabra buscada: petty
+Largo de la palabra: 5
+Tiempo de búsqueda: 7329
+Número de ocurrencias: 1
+
+Palabra buscada: summer
+Largo de la palabra: 6
+Tiempo de búsqueda: 3987
+Número de ocurrencias: 0
+
+Palabra buscada: populistsocialists
+Largo de la palabra: 18
+Tiempo de búsqueda: 5447
+Número de ocurrencias: 1
+
+Palabra buscada: assemblyuntil
+Largo de la palabra: 13
+Tiempo de búsqueda: 6720
+Número de ocurrencias: 1
+
+Palabra buscada: they
+Largo de la palabra: 4
+Tiempo de búsqueda: 5586
+Número de ocurrencias: 0
+
+Palabra buscada: story
+Largo de la palabra: 5
+Tiempo de búsqueda: 3921
+Número de ocurrencias: 0
+
+Palabra buscada: which
+Largo de la palabra: 5
+Tiempo de búsqueda: 3996
+Número de ocurrencias: 0
+
+Palabra buscada: committee
+Largo de la palabra: 9
+Tiempo de búsqueda: 7683
+Número de ocurrencias: 1
+
+Palabra buscada: inexchange
+Largo de la palabra: 10
+Tiempo de búsqueda: 5887
+Número de ocurrencias: 1
+
+Palabra buscada: cooperative
+Largo de la palabra: 11
+Tiempo de búsqueda: 6570
+Número de ocurrencias: 1
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 5020
+Número de ocurrencias: 1
+
+Palabra buscada: other
+Largo de la palabra: 5
+Tiempo de búsqueda: 9425
+Número de ocurrencias: 1
+
+Palabra buscada: however
+Largo de la palabra: 7
+Tiempo de búsqueda: 7701
+Número de ocurrencias: 1
+
+Palabra buscada: which
+Largo de la palabra: 5
+Tiempo de búsqueda: 5241
+Número de ocurrencias: 0
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 4554
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5751
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 8738
+Número de ocurrencias: 0
+
+Palabra buscada: political
+Largo de la palabra: 9
+Tiempo de búsqueda: 6708
+Número de ocurrencias: 1
+
+Palabra buscada: radical
+Largo de la palabra: 7
+Tiempo de búsqueda: 4890
+Número de ocurrencias: 0
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 4420
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4161
+Número de ocurrencias: 0
+
+Palabra buscada: powers
+Largo de la palabra: 6
+Tiempo de búsqueda: 7199
+Número de ocurrencias: 1
+
+Palabra buscada: revolution
+Largo de la palabra: 10
+Tiempo de búsqueda: 4225
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 3797
+Número de ocurrencias: 0
+
+Palabra buscada: these
+Largo de la palabra: 5
+Tiempo de búsqueda: 5908
+Número de ocurrencias: 0
+
+Palabra buscada: their
+Largo de la palabra: 5
+Tiempo de búsqueda: 5374
+Número de ocurrencias: 0
+
+Palabra buscada: tradeunions
+Largo de la palabra: 11
+Tiempo de búsqueda: 4124
+Número de ocurrencias: 0
+
+Palabra buscada: proposed
+Largo de la palabra: 8
+Tiempo de búsqueda: 6032
+Número de ocurrencias: 1
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 3864
+Número de ocurrencias: 0
+
+Palabra buscada: originally
+Largo de la palabra: 10
+Tiempo de búsqueda: 7713
+Número de ocurrencias: 1
+
+Palabra buscada: corpshad
+Largo de la palabra: 8
+Tiempo de búsqueda: 6439
+Número de ocurrencias: 1
+
+Palabra buscada: with
+Largo de la palabra: 4
+Tiempo de búsqueda: 4347
+Número de ocurrencias: 0
+
+Palabra buscada: vinaver
+Largo de la palabra: 7
+Tiempo de búsqueda: 3074
+Número de ocurrencias: 0
+
+Palabra buscada: founded
+Largo de la palabra: 7
+Tiempo de búsqueda: 2632
+Número de ocurrencias: 0
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 4412
+Número de ocurrencias: 0
+
+Palabra buscada: that
+Largo de la palabra: 4
+Tiempo de búsqueda: 8611
+Número de ocurrencias: 1
+
+Palabra buscada: doubt
+Largo de la palabra: 5
+Tiempo de búsqueda: 4394
+Número de ocurrencias: 0
+
+Palabra buscada: chapter
+Largo de la palabra: 7
+Tiempo de búsqueda: 3587
+Número de ocurrencias: 0
+
+Palabra buscada: is
+Largo de la palabra: 2
+Tiempo de búsqueda: 12025
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 5181
+Número de ocurrencias: 0
+
+Palabra buscada: with
+Largo de la palabra: 4
+Tiempo de búsqueda: 4719
+Número de ocurrencias: 0
+
+Palabra buscada: atthis
+Largo de la palabra: 6
+Tiempo de búsqueda: 9056
+Número de ocurrencias: 1
+
+Palabra buscada: democracywilliam
+Largo de la palabra: 16
+Tiempo de búsqueda: 4103
+Número de ocurrencias: 0
+
+Palabra buscada: break
+Largo de la palabra: 5
+Tiempo de búsqueda: 5626
+Número de ocurrencias: 1
+
+Palabra buscada: last
+Largo de la palabra: 4
+Tiempo de búsqueda: 4540
+Número de ocurrencias: 0
+
+Palabra buscada: beforethe
+Largo de la palabra: 9
+Tiempo de búsqueda: 5461
+Número de ocurrencias: 1
+
+Palabra buscada: included
+Largo de la palabra: 8
+Tiempo de búsqueda: 56783
+Número de ocurrencias: 1
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 4781
+Número de ocurrencias: 0
+
+Palabra buscada: fall
+Largo de la palabra: 4
+Tiempo de búsqueda: 2754
+Número de ocurrencias: 0
+
+Palabra buscada: agreed
+Largo de la palabra: 6
+Tiempo de búsqueda: 3401
+Número de ocurrencias: 0
+
+Palabra buscada: bolshevik
+Largo de la palabra: 9
+Tiempo de búsqueda: 6039
+Número de ocurrencias: 1
+
+Palabra buscada: life
+Largo de la palabra: 4
+Tiempo de búsqueda: 4442
+Número de ocurrencias: 0
+
+Palabra buscada: improvements
+Largo de la palabra: 12
+Tiempo de búsqueda: 5466
+Número de ocurrencias: 1
+
+Palabra buscada: controlled
+Largo de la palabra: 10
+Tiempo de búsqueda: 6969
+Número de ocurrencias: 1
+
+Palabra buscada: see
+Largo de la palabra: 3
+Tiempo de búsqueda: 5020
+Número de ocurrencias: 0
+
+Palabra buscada: figures
+Largo de la palabra: 7
+Tiempo de búsqueda: 3059
+Número de ocurrencias: 0
+
+Palabra buscada: is
+Largo de la palabra: 2
+Tiempo de búsqueda: 5907
+Número de ocurrencias: 1
+
+Palabra buscada: form
+Largo de la palabra: 4
+Tiempo de búsqueda: 3139
+Número de ocurrencias: 0
+
+Palabra buscada: tsars
+Largo de la palabra: 5
+Tiempo de búsqueda: 8159
+Número de ocurrencias: 0
+
+Palabra buscada: tothe
+Largo de la palabra: 5
+Tiempo de búsqueda: 4527
+Número de ocurrencias: 0
+
+Palabra buscada: cities
+Largo de la palabra: 6
+Tiempo de búsqueda: 3796
+Número de ocurrencias: 0
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5745
+Número de ocurrencias: 0
+
+Palabra buscada: newspaper
+Largo de la palabra: 9
+Tiempo de búsqueda: 3851
+Número de ocurrencias: 0
+
+Palabra buscada: died
+Largo de la palabra: 4
+Tiempo de búsqueda: 4223
+Número de ocurrencias: 0
+
+Palabra buscada: kind
+Largo de la palabra: 4
+Tiempo de búsqueda: 7609
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4470
+Número de ocurrencias: 0
+
+Palabra buscada: crowd
+Largo de la palabra: 5
+Tiempo de búsqueda: 4281
+Número de ocurrencias: 0
+
+Palabra buscada: and
+Largo de la palabra: 3
+Tiempo de búsqueda: 3807
+Número de ocurrencias: 0
+
+Palabra buscada: were
+Largo de la palabra: 4
+Tiempo de búsqueda: 4729
+Número de ocurrencias: 0
+
+Palabra buscada: supported
+Largo de la palabra: 9
+Tiempo de búsqueda: 4210
+Número de ocurrencias: 0
+
+Palabra buscada: inthe
+Largo de la palabra: 5
+Tiempo de búsqueda: 8061
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4348
+Número de ocurrencias: 0
+
+Palabra buscada: hands
+Largo de la palabra: 5
+Tiempo de búsqueda: 7848
+Número de ocurrencias: 1
+
+Palabra buscada: summerof
+Largo de la palabra: 8
+Tiempo de búsqueda: 4183
+Número de ocurrencias: 0
+
+Palabra buscada: a
+Largo de la palabra: 1
+Tiempo de búsqueda: 8216
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 6072
+Número de ocurrencias: 0
+
+Palabra buscada: what
+Largo de la palabra: 4
+Tiempo de búsqueda: 5281
+Número de ocurrencias: 0
+
+Palabra buscada: central
+Largo de la palabra: 7
+Tiempo de búsqueda: 7756
+Número de ocurrencias: 1
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 3874
+Número de ocurrencias: 0
+
+Palabra buscada: in
+Largo de la palabra: 2
+Tiempo de búsqueda: 5945
+Número de ocurrencias: 1
+
+Palabra buscada: the
+Largo de la palabra: 3
+Tiempo de búsqueda: 5885
+Número de ocurrencias: 0
+
+Palabra buscada: of
+Largo de la palabra: 2
+Tiempo de búsqueda: 4233
+Número de ocurrencias: 0
+
+Palabra buscada: by
+Largo de la palabra: 2
+Tiempo de búsqueda: 5679
+Número de ocurrencias: 1
+
+Palabra buscada: was
+Largo de la palabra: 3
+Tiempo de búsqueda: 8652
+Número de ocurrencias: 1
+
+Palabra buscada: administrative
+Largo de la palabra: 14
+Tiempo de búsqueda: 3974
+Número de ocurrencias: 0
+
+Palabra buscada: tchaikovsky
+Largo de la palabra: 11
+Tiempo de búsqueda: 4748
+Número de ocurrencias: 0
+
+Palabra buscada: text
+Largo de la palabra: 4
+Tiempo de búsqueda: 11127
+Número de ocurrencias: 1
+
+Palabra buscada: short
+Largo de la palabra: 5
+Tiempo de búsqueda: 8090
+Número de ocurrencias: 1
+

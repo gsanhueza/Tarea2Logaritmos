@@ -14,20 +14,20 @@ public class Main {
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "1010011001010011001$";
+		String input = "10100$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
-		imprimirSuffixTree(t);
+		//imprimirSuffixTree(t);
 
-		/*List<Integer> resp = x.buscar(t,"00");
+		List<Integer> resp = x.suffixStartPosition("10",t);
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
-				System.out.print(integer + "  ");
+				System.out.print(integer + " \n");
 			}
 		} else {
 			System.out.println("No se encontro el sufijo");
-		}*/
+		}
 
 		/**
 		 * TEST 2 text = (english.short) search = book
@@ -91,7 +91,7 @@ public class Main {
 				logger.log("Palabra buscada: " + word);
 				logger.log("Largo de la palabra: " + wordLength);
 				initTime = System.nanoTime();
-				List<Integer> ocurrences = st.search(word, root);
+				List<Integer> ocurrences = st.suffixStartPosition(word, root);
 				endTime = System.nanoTime();
 				logger.log("Tiempo de búsqueda: " + (endTime - initTime));
 				if (ocurrences != null)

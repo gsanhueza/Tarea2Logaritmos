@@ -31,85 +31,9 @@ public class Ukkonen {
 
 	}
 
-	/* Retorna todas las posiciones donde comienza el sufijo */
-	public List<Integer> search(String suffix, Node root) {
-		// Node root = run();
-		char[] charArray = suffix.toCharArray();
-		char la;
-		if (charArray.length != 0) {
-			la = charArray[0];
-			root = root.children[charArray[0]];
-		}
-		else
-			return null;
 
-		return getSuffixes(root, suffix, 0);
-	}
 
-	private List<Integer> getSuffixes(Node root, String suffix, int count) {
-		List<Integer> resp = new ArrayList<Integer>();
-		if (root == null) {
-			return null;
-		}
 
-		if (root.isLeaf()) {
-			if (suffix.equals(realString.substring(root.start, root.getLast() + 1))) {
-
-				resp.add(realString.length() - (count + 1));
-				return resp;
-			} else
-				return null;
-
-		}
-		if (realString.substring(root.start, root.getLast() + 1).equals(suffix)) {
-			for (Node n : root.children) {
-				List<Integer> aux = (getLeafPath(n, count + root.getLast() - root.start + 1));
-				if (aux != null) {
-					for (int i : aux)
-						resp.add(i);
-				}
-			}
-			return resp;
-		}
-
-		if (suffix.contains(realString.substring(root.start, root.getLast() + 1))) {
-			for (Node n : root.children) {
-				List<Integer> aux = getSuffixes(n, suffix.substring(root.getLast() - root.start + 1),
-						count + root.getLast() - root.start + 1);
-				if (aux != null) {
-					for (int integer : aux) {
-						resp.add(integer);
-					}
-				}
-			}
-		}
-		else {
-			return null;
-		}
-		return resp;
-	}
-
-	private List<Integer> getLeafPath(Node n, int count) {
-		List<Integer> resp = new ArrayList<Integer>();
-		if (n == null)
-			return null;
-
-		if (n.isLeaf()) {
-			resp.add(realString.length() - ((count + 1) + n.getLast() - n.start));
-			return resp;
-
-		}
-		for (Node aux : n.children) {
-			List<Integer> integers = getLeafPath(aux, count + n.getLast() - n.start + 1);
-			if (integers != null) {
-				for (int i : integers)
-					resp.add(i);
-			}
-			return resp;
-
-		}
-		return resp;
-	}
 
 	/* La creacion del arbol es O(n) */
 	public Node run() {
@@ -156,9 +80,6 @@ public class Ukkonen {
 					 * i?
 					 */
 					int dif = activeLength;
-					if (activeLength == 0) {
-						System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-					}
 					if (activeLeaf.getLast() - activeLeaf.start +1 < activeLength+1) {
 						activeNode = activeLeaf;
 
@@ -210,8 +131,6 @@ public class Ukkonen {
 
 
 						InternalNode internal = new InternalNode(x, x + activeLength - 1);
-
-						System.out.println("aaaaaaaa: " + internal.start +"  " + internal.getLast());
 						internal.setLink(root);
 						Node child1;
 						Node child2;
@@ -226,8 +145,7 @@ public class Ukkonen {
 							child2 = new Node(i);
 
 						}
-						System.out.println("child1: " + child1.start + "  " + child1.getLast());
-						System.out.println("child2: " + child2.start + "  " + child2.getLast());
+
 						internal.addChildren(child1, receivedString[child1.start]);
 						internal.addChildren(child2, receivedString[child2.start]);
 						activeNode.addChildren(internal, receivedString[activeEdge]);
@@ -265,40 +183,52 @@ public class Ukkonen {
 		return root;
 	}
 
-	public List<Integer> buscar(Node root, String suffix) {
+
+	public List<Integer> suffixStartPosition(String suffix, Node root) {
 		int i = 0;
 		int suffixLength = suffix.length();
 		List<Integer> resp = new ArrayList<Integer>();
 		Node currentNode = root;
-		for (;;) {
-			System.out.println("aaaa");
-			if (currentNode.children == null)
+		int dif;
+		Node auxNode;
+		int last = -1;
+		while(true) {
+			auxNode = currentNode;
+			if (currentNode.isLeaf())
+				break;
+			if (currentNode == null)
 				break;
 			if (i>suffixLength)
 				break;
-			for (Node auxNode : currentNode.children) {
-				if (auxNode == null)
+			for (Node hijo : currentNode.children) {
+				if(hijo == null)
 					continue;
-				if (receivedString[auxNode.start] == suffix.charAt(i)) {
-					int difference = auxNode.getLast() - auxNode.start+1;
-					if (difference < suffixLength-i) {
-						i+= difference;
-						currentNode = auxNode;
-
+				if (i>suffixLength)
+					break;
+				dif = hijo.getLast() - hijo.start +1;
+				if (receivedString[hijo.start] == suffix.charAt(i)){
+					if (dif >suffixLength - i) {
+						resp.add(hijo.start-i);
+						currentNode = hijo;
 						break;
 					}
-					else if (difference > suffixLength-i) {
-						resp.add(i);
-						i +=difference;
-						currentNode = auxNode;
+					else if (dif < suffixLength-i) {
+						i+=dif;
+						currentNode = hijo;
+						break;
+					}
+					else {
+						resp.add(hijo.start-i);
+						currentNode = hijo;
+						break;
 					}
 
-					else {
-						resp.add(i);
-					}
 
 				}
+
 			}
+			if (auxNode.equals(currentNode))
+				break;
 		}
 		return resp;
 	}
