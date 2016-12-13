@@ -1,46 +1,51 @@
-# Inicializador
+## Inicializador
 
 start = 15;
-finish = 25;
+#finish = 25;
+finish = 21;
 for i = start : finish
   text_length(i - start + 1) = 2^i;
   word_search_number(i - start + 1) = 2^i / 10;
 end
 
-# --- START DATA --- #
+## --- START DATA --- ##
 
-# Tiempos de construccion Suffix Tree (mseg)
+## Tiempos de construccion Suffix Tree (mseg)
 
-construction_time = [6,11,16,19,20,28,34,34,34,34,34];
+#construction_time = [15,61,109,226,575,1034,34,34,34,34,34]; # 15..25
+construction_time = [15, 61, 109, 226, 575, 1034, 2219]; # 15..21
 
-# Operaciones por fase
+## Operaciones por fase
 
-avg_ops_per_phase = [0,0,0,0,0,0,0,0,0,0,0];
+#avg_ops_per_phase = [0,0,0,0,0,0,0,0,0,0,0];
+avg_ops_per_phase = [0,0,0,0,0,0,0];
 
-# Largo promedio patron
+## Largo promedio patron
 
-avg_pattern_length = [1,2,3,4,5,6,7,8,9,10,11];
+#avg_pattern_length = [1,2,3,4,5,6,7,8,9,10,11];
+avg_pattern_length = [1,2,3,4,5,6,7];
 
-# Tiempos de busqueda (mseg)
+## Tiempos de busqueda (mseg)
 
-search_time = [11,10,9,8,7,6,5,4,3,2,1];
+#search_time = [11,10,9,8,7,6,5,4,3,2,1];
+search_time = [7,6,5,4,3,2,1];
 
-# --- END DATA --- #
+## --- END DATA --- ##
 
-# Plot para tiempo de construccion
+## Plot para tiempo de construccion
 
 figure(1);
 hold on;
-plot(log2(text_length), construction_time, "r");
+plot(text_length, construction_time, "r");
 legend("Tiempo de construccion");
 grid on;
-xlabel ("Numero de caracteres en texto (escala log)");
+xlabel ("Numero de caracteres en texto");
 ylabel ("Tiempo de construccion (mseg)");
 title ("Numero de caracteres vs Tiempo de construccion del Suffix Tree");
 print -dpng fig1.png;
 hold off;
 
-# Plot para tiempo de construccion
+## Plot para tiempo de construccion
 
 figure(2);
 hold on;
@@ -53,7 +58,7 @@ title ("Numero de caracteres vs Operaciones por fase");
 print -dpng fig2.png;
 hold off;
 
-# Plot para busqueda
+## Plot para busqueda
 
 figure(3);
 hold on;

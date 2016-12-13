@@ -60,6 +60,7 @@ public class Main {
 		String processedText = TextPreprocessor.process(text);
 
 		double textLength = Math.log(processedText.length()) / Math.log(2.0);
+		logger.log("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
 		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
 
 		/**
@@ -74,10 +75,10 @@ public class Main {
 
 		System.out.println("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
+		System.out.println("Tiempo de construcción de SuffixTree = " + (endTime - initTime) + "\n");
 		logger.log();
 		
 		}
-
 /*
 		/**
 		 * Elegimos N/10 palabras del texto al azar para buscarlas
