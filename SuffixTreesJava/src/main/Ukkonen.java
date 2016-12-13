@@ -40,9 +40,12 @@ public class Ukkonen {
 		Node suffixLink = null;
 		activeNode = new InternalNode(-1, -1);
 		Node root = activeNode;
+		int flag = 0;
 		for (int i = 0; i < realString.length(); i++) {
 			remaining++;
 			end.setValue(i);
+			suffixLink = null;
+			flag = 0;
 			while (remaining > 0) {
 				/*
 				 * getPath entrega la variable "start" si es que hay match con
@@ -51,19 +54,35 @@ public class Ukkonen {
 				if (activeLength == 0) {
 					int path = getPath(receivedString[i], activeNode);
 					if (path == -1) {
-						activeNode.addChildren(new Node(i), receivedString[i]);
+						Node myNode = new Node(i);
+						//myNode.setLink(root);
+						activeNode.addChildren(myNode, receivedString[i]);
+						if (!activeNode.isLeaf()){
+							if (suffixLink!=null) {
+								suffixLink.setLink(activeNode);
+								suffixLink = activeNode;
+
+							}
+							activeNode.setLink(root);
+
+						}
 						if (activeNode.getLink()!= null) {
 							activeNode = activeNode.getLink();
 						}
-
 						remaining--;
+
+
 					} else {
 						/* Rule 3 */
+
 						activeEdge = path;
 						activeLength++;
+						if(flag ==1)
+							continue;
 						break;
 					}
 				} else {
+					flag = 0;
 					/*
 					 * Nos paramos en el caracter que tenemos guardado (active
 					 * edge)
@@ -84,6 +103,7 @@ public class Ukkonen {
 						activeNode = activeLeaf;
 
 						activeLength = activeLength -(activeLeaf.getLast() - activeLeaf.start+1);
+						flag = 1;
 						continue;//Esto esta malo, da 0 a veces
 						/*dif = dif -activeLength;
 						if (activeLeaf.getChildren(receivedString[activeEdge+dif]) == null)
@@ -105,7 +125,9 @@ public class Ukkonen {
 
 						}*/
 					}
-					char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
+					//char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
+					char c = receivedString[activeEdge]; //huan
+
 					if (c == receivedString[i]) {
 						/*if (suffixLink != null) {
 							suffixLink.setLink(activeNode.getChildren(receivedString[i]));
@@ -113,7 +135,7 @@ public class Ukkonen {
 							activeNode.setLink(root);
 						}*/
 						activeLength++;
-						break;
+						break;// Hay un problema con los break
 
 
 
@@ -177,9 +199,13 @@ public class Ukkonen {
 				}
 			}
 			/* Como salimos del caracter i, olvidamos el suffixLink guardado */
-			suffixLink = null;
+
 
 		}
+		if (remaining > 0 )
+			System.out.println("Esta la cagaa " + flag);
+		else
+			System.out.println("ya no esta la cagaa");
 		return root;
 	}
 
@@ -233,7 +259,50 @@ public class Ukkonen {
 		return resp;
 	}
 
-	private void moveToLink() {
+	public int countSuffixOcurrences(String suffix,Node root) {
+		Node currentNode = root;
+		Node auxNode;
+		int count = 0;
+		int i = 0;
+		int dif;
+		int suffixLength = suffix.length();
+		while (true) {
+			auxNode = currentNode;
+			for (Node child : currentNode.children) {
+				if (child == null)
+					continue;
+				if (receivedString[child.start] == suffix.charAt(i)) {
+					dif = child.getLast() - child.start +1;;
+					if (dif >suffixLength - i) {
+						return countLeafs(child);
 
+					}
+					else if (dif < suffixLength-i) {
+						i+=dif;
+						currentNode = child;
+						break;
+					}
+					else {
+						return countLeafs(child);
+
+					}
+				}
+
+			}
+			if (currentNode.equals(auxNode))
+				return -1;
+		}
+	}
+
+	private int countLeafs(Node child) {
+		int count = 0;
+		if (child.isLeaf())
+			return 1;
+		for (Node aux : child.children){
+			if (aux == null)
+				continue;
+			count += countLeafs(aux);
+		}
+		return count;
 	}
 }

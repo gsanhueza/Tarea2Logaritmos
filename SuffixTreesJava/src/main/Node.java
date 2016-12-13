@@ -1,6 +1,7 @@
 package main;
 
 public class Node {
+	static int count=0;
 	private Node suffixLink;
 	public int start;
 	private Last last;
@@ -17,6 +18,7 @@ public class Node {
 
 	public Node(int start) {
 		setLink(null);
+		count++;
 		this.start = start;
 		last = Last.getInstance();
 		isLeaf = true;

@@ -14,12 +14,13 @@ public class Main {
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "10100$";
+		String input = "1010011001010011001$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
 		//imprimirSuffixTree(t);
-
-		List<Integer> resp = x.suffixStartPosition("10",t);
+		int asdf = x.countSuffixOcurrences("00",t);
+		System.out.println("count: " + asdf);
+		List<Integer> resp = x.suffixStartPosition("00",t);
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
@@ -66,6 +67,7 @@ public class Main {
 
 		initTime = System.nanoTime();
 		Node root = st.run();
+		System.out.println("aaaaaaaa: " + Node.count);
 		endTime = System.nanoTime();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
@@ -91,13 +93,11 @@ public class Main {
 				logger.log("Palabra buscada: " + word);
 				logger.log("Largo de la palabra: " + wordLength);
 				initTime = System.nanoTime();
-				List<Integer> ocurrences = st.suffixStartPosition(word, root);
+				int ocurrences = st.countSuffixOcurrences(word, root);
 				endTime = System.nanoTime();
 				logger.log("Tiempo de búsqueda: " + (endTime - initTime));
-				if (ocurrences != null)
-					logger.log("Número de ocurrencias: " + ocurrences.size());
-				else
-					logger.log("Número de ocurrencias: 0");
+				logger.log("Número de ocurrencias: " + ocurrences);
+
 				logger.log();
 			}
 		}
