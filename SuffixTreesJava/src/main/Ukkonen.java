@@ -45,7 +45,6 @@ public class Ukkonen {
 			remaining++;
 			end.setValue(i);
 			suffixLink = null;
-			flag = 0;
 			while (remaining > 0) {
 				/*
 				 * getPath entrega la variable "start" si es que hay match con
@@ -57,12 +56,13 @@ public class Ukkonen {
 						Node myNode = new Node(i);
 						//myNode.setLink(root);
 						activeNode.addChildren(myNode, receivedString[i]);
-						if (!activeNode.isLeaf()){
+						if (!activeNode.equals(root) &&!activeNode.isLeaf()){
 							if (suffixLink!=null) {
 								suffixLink.setLink(activeNode);
-								suffixLink = activeNode;
+
 
 							}
+							suffixLink = activeNode;
 							activeNode.setLink(root);
 
 						}
@@ -72,17 +72,16 @@ public class Ukkonen {
 						remaining--;
 
 
+
 					} else {
 						/* Rule 3 */
 
 						activeEdge = path;
 						activeLength++;
-						if(flag ==1)
-							continue;
+						flag = 1;
 						break;
 					}
 				} else {
-					flag = 0;
 					/*
 					 * Nos paramos en el caracter que tenemos guardado (active
 					 * edge)
@@ -103,8 +102,9 @@ public class Ukkonen {
 						activeNode = activeLeaf;
 
 						activeLength = activeLength -(activeLeaf.getLast() - activeLeaf.start+1);
-						flag = 1;
-						continue;//Esto esta malo, da 0 a veces
+						activeEdge = activeEdge + (activeLeaf.getLast() - activeLeaf.start+1) ;
+						flag = 3;
+						continue;
 						/*dif = dif -activeLength;
 						if (activeLeaf.getChildren(receivedString[activeEdge+dif]) == null)
 							System.out.println("mmmmmmmmmm: " + realString.substring(i,i+11));
@@ -125,8 +125,8 @@ public class Ukkonen {
 
 						}*/
 					}
-					//char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
-					char c = receivedString[activeEdge]; //huan
+					char c = receivedString[activeNode.getChildren(receivedString[activeEdge]).start + activeLength];
+					//char c = receivedString[activeEdge]; //huan
 
 					if (c == receivedString[i]) {
 						/*if (suffixLink != null) {
@@ -272,7 +272,7 @@ public class Ukkonen {
 				if (child == null)
 					continue;
 				if (receivedString[child.start] == suffix.charAt(i)) {
-					dif = child.getLast() - child.start +1;;
+					dif = child.getLast() - child.start +1;
 					if (dif >suffixLength - i) {
 						return countLeafs(child);
 

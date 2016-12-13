@@ -14,13 +14,13 @@ public class Main {
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "1010011001010011001$";
+		String input = "101001100$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
 		//imprimirSuffixTree(t);
-		int asdf = x.countSuffixOcurrences("00",t);
+		int asdf = x.countSuffixOcurrences("1",t);
 		System.out.println("count: " + asdf);
-		List<Integer> resp = x.suffixStartPosition("00",t);
+		List<Integer> resp = x.suffixStartPosition("1",t);
 		if (resp != null) {
 			System.out.println("El sufijo puede encontrarse en la/s posicion/nes: ");
 			for (int integer : resp) {
@@ -50,12 +50,15 @@ public class Main {
 		String text = null;
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N15")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N16")), StandardCharsets.UTF_8);
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		String processedText = TextPreprocessor.process(text);
+		processedText = processedText.concat("$");
+		System.out.println(processedText.substring(processedText.length()-10));
 
 		double textLength = Math.log(processedText.length()) / Math.log(2.0);
 		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
@@ -67,7 +70,7 @@ public class Main {
 
 		initTime = System.nanoTime();
 		Node root = st.run();
-		System.out.println("aaaaaaaa: " + Node.count);
+		System.out.println("Numero de nodos del arbol: " + Node.count);
 		endTime = System.nanoTime();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
