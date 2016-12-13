@@ -1,7 +1,7 @@
 # Inicializador
 
 start = 15;
-finish = 21;
+finish = 25;
 for i = start : finish
   text_length(i - start + 1) = 2^i;
   word_search_number(i - start + 1) = 2^i / 10;
@@ -11,43 +11,19 @@ end
 
 # Tiempos de construccion Suffix Tree (mseg)
 
-construction_time(1) = 0; # 15
-construction_time(2) = 0; # 16
-construction_time(3) = 0; # 17
-construction_time(4) = 0; # 18
-construction_time(5) = 0; # 19
-construction_time(6) = 0; # 20
-construction_time(7) = 0; # 21
+construction_time = [6,11,16,19,20,28,34,34,34,34,34];
 
 # Operaciones por fase
 
-avg_ops_per_phase(1) = 0;
-avg_ops_per_phase(2) = 0;
-avg_ops_per_phase(3) = 0;
-avg_ops_per_phase(4) = 0;
-avg_ops_per_phase(5) = 0;
-avg_ops_per_phase(6) = 0;
-avg_ops_per_phase(7) = 0;
+avg_ops_per_phase = [0,0,0,0,0,0,0,0,0,0,0];
 
 # Largo promedio patron
 
-avg_pattern_length(1) = 1;
-avg_pattern_length(2) = 2;
-avg_pattern_length(3) = 3;
-avg_pattern_length(4) = 4;
-avg_pattern_length(5) = 5;
-avg_pattern_length(6) = 6;
-avg_pattern_length(7) = 7;
+avg_pattern_length = [1,2,3,4,5,6,7,8,9,10,11];
 
 # Tiempos de busqueda (mseg)
 
-search_time(1) = 0;
-search_time(2) = 0;
-search_time(3) = 0;
-search_time(4) = 0;
-search_time(5) = 0;
-search_time(6) = 0;
-search_time(7) = 0;
+search_time = [11,10,9,8,7,6,5,4,3,2,1];
 
 # --- END DATA --- #
 
@@ -55,12 +31,13 @@ search_time(7) = 0;
 
 figure(1);
 hold on;
-plot(text_length, construction_time, "r");
+plot(log2(text_length), construction_time, "r");
 legend("Tiempo de construccion");
 grid on;
-xlabel ("Numero de caracteres en texto");
+xlabel ("Numero de caracteres en texto (escala log)");
 ylabel ("Tiempo de construccion (mseg)");
 title ("Numero de caracteres vs Tiempo de construccion del Suffix Tree");
+print -dpng fig1.png;
 hold off;
 
 # Plot para tiempo de construccion
@@ -73,6 +50,7 @@ grid on;
 xlabel ("Numero de caracteres en texto");
 ylabel ("Promedio de operaciones");
 title ("Numero de caracteres vs Operaciones por fase");
+print -dpng fig2.png;
 hold off;
 
 # Plot para busqueda
@@ -86,4 +64,5 @@ grid on;
 xlabel ("Numero de palabras");
 ylabel ("Tiempo de busqueda (mseg)");
 title ("Numero de palabras vs Tiempo de busqueda");
+print -dpng fig3.png;
 hold off;
