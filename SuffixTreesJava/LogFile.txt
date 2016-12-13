@@ -1,22 +1,22 @@
-Tiempo de construcción de SuffixTree = 1
+Tiempo de construcción de SuffixTree = 4
 
-Tiempo de construcción de SuffixTree = 8
+Tiempo de construcción de SuffixTree = 2
 
-Tiempo de construcción de SuffixTree = 3
+Tiempo de construcción de SuffixTree = 33
 
-Tiempo de construcción de SuffixTree = 5
+Tiempo de construcción de SuffixTree = 12
 
-Tiempo de construcción de SuffixTree = 11
+Tiempo de construcción de SuffixTree = 7
 
-Tiempo de construcción de SuffixTree = 22
+Tiempo de construcción de SuffixTree = 13
 
-Tiempo de construcción de SuffixTree = 21
+Tiempo de construcción de SuffixTree = 25
 
-Tiempo de construcción de SuffixTree = 43
+Tiempo de construcción de SuffixTree = 51
 
-Tiempo de construcción de SuffixTree = 86
+Tiempo de construcción de SuffixTree = 89
 
-Tiempo de construcción de SuffixTree = 172
+Tiempo de construcción de SuffixTree = 185
 
-Tiempo de construcción de SuffixTree = 350
+Tiempo de construcción de SuffixTree = 344
 
