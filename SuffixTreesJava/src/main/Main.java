@@ -48,17 +48,17 @@ public class Main {
 		 * Recibimos un texto para procesarlo
 		 */
 		String text = null;
+		
+		for (int i = 15; i <= 25; i++) {
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N16")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N" + i)), StandardCharsets.UTF_8);
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		String processedText = TextPreprocessor.process(text);
-		processedText = processedText.concat("$");
-		System.out.println(processedText.substring(processedText.length()-10));
 
 		double textLength = Math.log(processedText.length()) / Math.log(2.0);
 		System.out.println("El texto procesado es de aprox. N = 2^" + Math.round(textLength) + " caracteres");
@@ -73,12 +73,16 @@ public class Main {
 		System.out.println("Numero de nodos del arbol: " + Node.count);
 		endTime = System.nanoTime();
 
+		System.out.println("Tiempo de construcción de SuffixTree = " + (endTime - initTime) / 1000000);
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log();
+		
+		}
 
+/*
 		/**
 		 * Elegimos N/10 palabras del texto al azar para buscarlas
-		 */
+		 *
 		List<String> toSearch = new ArrayList<String>();
 		String splittedText[] = processedText.split(" ");
 
@@ -88,7 +92,7 @@ public class Main {
 
 		/**
 		 * Buscamos las palabras en el Suffix Tree
-		 */
+		 *
 		for (String word : toSearch) {
 			if (word.length() != 0) {
 
@@ -104,11 +108,10 @@ public class Main {
 				logger.log();
 			}
 		}
+		*/
 		logger.terminate();
 
 	}
-
-	
 
 	public static void imprimirSuffixTree(Node root) {
 		int i = 0;
@@ -128,6 +131,5 @@ public class Main {
 		System.out.println("Cantidad de hijos: " + i);
 
 	}
-
 
 }
