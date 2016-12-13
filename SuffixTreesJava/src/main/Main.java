@@ -49,7 +49,7 @@ public class Main {
 		String text = null;
 
 		try {
-			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N15")), StandardCharsets.UTF_8);
+			text = new String(Files.readAllBytes(Paths.get("../Texts/english.N18")), StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -64,9 +64,9 @@ public class Main {
 		 */
 		Ukkonen st = new Ukkonen(processedText);
 
-		initTime = System.nanoTime();
+		initTime = System.currentTimeMillis();
 		Node root = st.run();
-		endTime = System.nanoTime();
+		endTime = System.currentTimeMillis();
 
 		logger.log("Tiempo de construcción de SuffixTree = " + (endTime - initTime));
 		logger.log();

@@ -11,13 +11,13 @@ end
 
 # Tiempos de construccion Suffix Tree (mseg)
 
-construction_time(1) = 0; # 15
-construction_time(2) = 0; # 16
-construction_time(3) = 0; # 17
-construction_time(4) = 0; # 18
-construction_time(5) = 0; # 19
-construction_time(6) = 0; # 20
-construction_time(7) = 0; # 21
+construction_time(1) = 6; # 15
+construction_time(2) = 11; # 16
+construction_time(3) = 16; # 17
+construction_time(4) = 19; # 18
+construction_time(5) = 20; # 19
+construction_time(6) = 28; # 20
+construction_time(7) = 34; # 21
 
 # Operaciones por fase
 
@@ -55,10 +55,10 @@ search_time(7) = 0;
 
 figure(1);
 hold on;
-plot(text_length, construction_time, "r");
+plot(log2(text_length), construction_time, "r");
 legend("Tiempo de construccion");
 grid on;
-xlabel ("Numero de caracteres en texto");
+xlabel ("Numero de caracteres en texto (escala log)");
 ylabel ("Tiempo de construccion (mseg)");
 title ("Numero de caracteres vs Tiempo de construccion del Suffix Tree");
 hold off;
