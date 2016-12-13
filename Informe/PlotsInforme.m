@@ -11,59 +11,19 @@ end
 
 # Tiempos de construccion Suffix Tree (mseg)
 
-construction_time(1) = 6; # 15
-construction_time(2) = 11; # 16
-construction_time(3) = 16; # 17
-construction_time(4) = 19; # 18
-construction_time(5) = 20; # 19
-construction_time(6) = 28; # 20
-construction_time(7) = 34; # 21
-construction_time(8) = 34; # 22
-construction_time(9) = 34; # 23
-construction_time(10) = 34; # 24
-construction_time(11) = 34; # 25
+construction_time = [6,11,16,19,20,28,34,34,34,34,34];
 
 # Operaciones por fase
 
-avg_ops_per_phase(1) = 0;
-avg_ops_per_phase(2) = 0;
-avg_ops_per_phase(3) = 0;
-avg_ops_per_phase(4) = 0;
-avg_ops_per_phase(5) = 0;
-avg_ops_per_phase(6) = 0;
-avg_ops_per_phase(7) = 0;
-avg_ops_per_phase(8) = 0;
-avg_ops_per_phase(9) = 0;
-avg_ops_per_phase(10) = 0;
-avg_ops_per_phase(11) = 0;
+avg_ops_per_phase = [0,0,0,0,0,0,0,0,0,0,0];
 
 # Largo promedio patron
 
-avg_pattern_length(1) = 1;
-avg_pattern_length(2) = 2;
-avg_pattern_length(3) = 3;
-avg_pattern_length(4) = 4;
-avg_pattern_length(5) = 5;
-avg_pattern_length(6) = 6;
-avg_pattern_length(7) = 7;
-avg_pattern_length(8) = 7;
-avg_pattern_length(9) = 7;
-avg_pattern_length(10) = 7;
-avg_pattern_length(11) = 7;
+avg_pattern_length = [1,2,3,4,5,6,7,8,9,10,11];
 
 # Tiempos de busqueda (mseg)
 
-search_time(1) = 0;
-search_time(2) = 0;
-search_time(3) = 0;
-search_time(4) = 0;
-search_time(5) = 0;
-search_time(6) = 0;
-search_time(7) = 0;
-search_time(8) = 0;
-search_time(9) = 0;
-search_time(10) = 0;
-search_time(11) = 0;
+search_time = [11,10,9,8,7,6,5,4,3,2,1];
 
 # --- END DATA --- #
 
