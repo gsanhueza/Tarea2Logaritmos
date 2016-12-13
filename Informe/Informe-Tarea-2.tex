@@ -98,8 +98,6 @@
 
 	\section{Diseño Teórico}
 
-	Se crearon distintas clases de Java para cada comportamiento dentro del Suffix Tree, y una clase principal Main, donde se hacen las pruebas.
-
 	\subsection{Main}
 
 	En Main se crea un archivo de \textit{logging} para registrar el tiempo de creación del Suffix Tree y los resultados de búsqueda, a partir de un texto leído desde el disco.
@@ -112,14 +110,40 @@
 		\item Se registran los resultados de búsqueda.
 	\end{itemize}
 
-
 	\subsection{Ukkonen}
 
-	// TODO: Explicar cómo lo hicimos para hacer que el algoritmo funcionara
+	Clase principal del algoritmo. Aquí se realiza la totalidad de la ejecución del algoritmo de Ukkonen.
 
-	\subsection{Otras clases}
+	Posee 5 métodos auxiliares:
+	\begin{itemize}
+		\item run(): Crea el Suffix Tree correspondiente, usando los siguientes métodos auxiliares.
+		\item getPath(char s, Node n): Retorna el camino desde el nodo n, con el caracter s.
+		\item search(String suffix, Node root): Busca el String \textit{suffix} en el nodo \textit{root}
+		\item getSuffixes(Node root, String suffix, int count): Método auxiliar para search. Busca recursivamente en los nodos por el sufijo \textit{suffix} usando
+		el número \textit{count} (usado para los caminos).
+		\item getLeafPath(Node n, int count): Retorna el camino a partir del nodo n, recorriendo \textit{count} nodos internos.
+	\end{itemize}
 
-	// TODO: Limpiar código de las clases que no se usan, para poner aquí las que sí usamos
+	\subsection{Last}
+
+	Esta clase es usada para mostrar el final de un camino.
+
+	\subsection{Node}
+
+	Esta clase se usa para almacenar la información correspondiente a cada sufijo. Puede ser o no ser una hoja. Es clase padre de \textit{InternalNode}.
+
+	\subsection{InternalNode}
+
+	Esta clase extiende de \textit{Node} para usarse como nodo interno (i.e., explícitamente \textbf{no es} una hoja).
+
+	\subsection{TextPreprocessor}
+
+	Esta clase recibe un texto como String y devuelve solamente los caracteres que coinciden con el \textit{regex} [a-zA-Z ]. El resto de los caracteres se eliminan
+	(entre los cuales están los saltos de línea, las puntuaciones y los espacios)
+
+	\subsection{Logger}
+
+	Esta clase recibe un nombre de archivo y escribe los datos que se le entregan a dicho archivo. Sirve para registrar la información necesaria para generar los gráficos del informe.
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -129,26 +153,35 @@
 
 	\subsection{Tiempo de Creación del Suffix Tree}
 
-	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
+% 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
+	Los resultados para los tiempos de construcción del Suffix Tree usando nuestra implementación son los siguientes:
 
 	\begin{center}
-		\begin{tabular}{|c|c|c|}
+		\begin{tabular}{|c|c|}
 			\hline
-			Largo del texto & Tiempo de Construcción & Operaciones por fase\\
+			Largo del texto & Tiempo de Construcción (mseg)\\
 			\hline
-			$2^{15}$ & X & X\\
+			$2^{15}$ & 6\\
 			\hline
-			$2^{16}$ & X & X\\
+			$2^{16}$ & 11\\
 			\hline
-			$2^{17}$ & X & X\\
+			$2^{17}$ & 16\\
 			\hline
-			$2^{18}$ & X & X\\
+			$2^{18}$ & 19\\
 			\hline
-			$2^{19}$ & X & X\\
+			$2^{19}$ & 20\\
 			\hline
-			$2^{20}$ & X & X\\
+			$2^{20}$ & 28\\
 			\hline
-			$2^{21}$ & X & X\\
+			$2^{21}$ & 34\\
+			\hline
+			$2^{22}$ & 34\\
+			\hline
+			$2^{23}$ & 34\\
+			\hline
+			$2^{24}$ & 34\\
+			\hline
+			$2^{25}$ & 34\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -156,7 +189,7 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig1.png}
 
-		Figura 1:
+		Figura 1: Tiempo de creación del Suffix Tree para N = $2^{15..25}$
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -165,7 +198,8 @@
 
 	\subsection{Desempeño de operación \textit{Buscar}}
 
-	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+% 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
+	Los resultados para los tiempos de búsqueda en el Suffix Tree son los siguientes:
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
@@ -186,19 +220,27 @@
 			\hline
 			$2^{21}$ & X & X\\
 			\hline
+			$2^{22}$ & X & X\\
+			\hline
+			$2^{23}$ & X & X\\
+			\hline
+			$2^{24}$ & X & X\\
+			\hline
+			$2^{25}$ & X & X\\
+			\hline
 		\end{tabular}
 	\end{center}
 
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig2.png}
 
-		Figura 2:
+		Figura 2: Promedio de operaciones por fase
 	\end{center}
 
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig3.png}
 
-		Figura 3:
+		Figura 3: Tiempo de búsqueda
 	\end{center}
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -209,14 +251,39 @@
 
 	\subsection{Construcción del Suffix Tree}
 
-	// TODO: Verificar si el Suffix tree fue lineal o no
+% 	// TODO: Elegir versión de la conclusión
+
+	% IF LINEAL
+	Encontramos que el algoritmo de Ukkonen tarda X en N = $2^{15}$ caracteres, y se va duplicando (aproximadamente) cada vez que duplicamos la cantidad de caracteres, por lo que la
+	implementación se consiguió hacer en tiempo $O(n)$.
+
+	% IF INCONSISTENTE
+	Además, nuestra hipótesis de que el \textit{garbage collector} de Java interferiría con nuestros resultados es correcta, dado que cada vez que se corría el algoritmo para una
+	cantidad fija de caracteres variaba notablemente.
+
+	% IF NOT DONE
+	Nuestra implementación tuvo problemas al momento de ejecutarse, dado que no creaba correctamente los nodos internos. De esta forma el arbol se creaba demasiado rápido como para
+	ser coherente con la cantidad de enlaces que deberían existir en el Suffix Tree.
+
+	% IF ONLY WORDS
+	Nuestra implementación funciona bien cuando se usan palabras cortas, dado que es posible construir el Suffix Tree en tiempo $O(n)$ (puesto que al duplicar el largo de la palabra,
+	también se duplicaba el tiempo en nano-segundos para construirlo).
 
 	\subsection{Búsqueda en el Suffix Tree}
 
-	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
+% 	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
+
+	% IF TOO MUCH TIME
+	Encontramos a partir de los resultados que la búsqueda se tarda más que la construcción del Suffix Tree. Probablemente se deba a problemas con la consistencia del árbol, dado que
+	se espera que la búsqueda tome tiempo logarítmico respecto a la cantidad de caracteres en el texto.
+
+	% IF GOOD
+	Encontramos que la búsqueda toma tiempo logarítmico respecto a la cantidad de caracteres en el sufijo buscado. Esto se debe a que la estructura de árbol permite acelerar notablemente
+	las búsquedas, además de que el Suffix Tree hace un \textit{tradeoff} entre tiempo y espacio ocupado.
 
 	\subsection{Conclusiones}
 
-	// TODO: Resumir lo ``aprendido'' (?)
+% 	// TODO: Resumir lo ``aprendido'' (?)
+% 	// TODO: Si no nos salió, explicar que podríamos hacer para arreglarlo (si tuvieramos más tiempo)
 
 \end{document}
