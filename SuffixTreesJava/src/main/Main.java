@@ -14,7 +14,7 @@ public class Main {
 		/**
 		 * TEST 1 text = banana search = ana
 		 */
-		String input = "1010011001010011001$";
+		String input = "101001100$";
 		Ukkonen x = new Ukkonen(input);
 		Node t = x.run();
 		imprimirSuffixTree(t);

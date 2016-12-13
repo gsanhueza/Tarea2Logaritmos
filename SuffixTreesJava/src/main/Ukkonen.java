@@ -35,7 +35,7 @@ public class Ukkonen {
 		else
 			return null;
 
-		return getSuffixes(root, suffix, 0);
+		return getSuffixes(root, suffix.substring(1), 0);
 	}
 
 	private List<Integer> getSuffixes(Node root, String suffix, int count) {
@@ -43,25 +43,23 @@ public class Ukkonen {
 		if (root == null) {
 			return null;
 		}
-
-		if (root.isLeaf()) {
-			if (suffix.equals(realString.substring(root.start, root.last.getValue() + 1))) {
-
-				resp.add(realString.length() - (count + 1));
-				return resp;
-			} else
-				return null;
-
-		}
 		if (realString.substring(root.start, root.last.getValue() + 1).equals(suffix)) {
-			for (Node n : root.children) {
-				List<Integer> aux = (getLeafPath(n, count + root.last.getValue() - root.start + 1));
-				if (aux != null) {
-					for (int i : aux)
-						resp.add(i);
+			try {
+				for (Node n : root.children) {
+					List<Integer> aux = (getLeafPath(n, count + root.last.getValue() - root.start + 1));
+					if (aux != null) {
+						for (int i : aux)
+							resp.add(i);
+					}
 				}
+				return resp;
 			}
-			return resp;
+			catch
+					(Exception e) {
+				return null;
+			}
+
+
 		}
 
 		if (suffix.contains(realString.substring(root.start, root.last.getValue() + 1))) {
