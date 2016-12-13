@@ -250,7 +250,6 @@ public class Ukkonen {
 								activeNode = activeNode.getLink();
 							else
 								activeNode = root;
-
 						}
 					}
 
