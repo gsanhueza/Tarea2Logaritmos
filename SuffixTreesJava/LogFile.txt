@@ -1,33 +1,55 @@
 El texto procesado es de aprox. N = 2^15 caracteres
 Tiempo de construcción de SuffixTree = 5
+Tiempo promedio de búsqueda: 2671.7495219885277
+Largo promedio del patrón: 5.363288718929255
 
 El texto procesado es de aprox. N = 2^16 caracteres
-Tiempo de construcción de SuffixTree = 2
+Tiempo de construcción de SuffixTree = 3
+Tiempo promedio de búsqueda: 1109.397448478901
+Largo promedio del patrón: 5.310107948969578
 
 El texto procesado es de aprox. N = 2^17 caracteres
 Tiempo de construcción de SuffixTree = 3
+Tiempo promedio de búsqueda: 259.9361914257228
+Largo promedio del patrón: 5.516949152542373
 
 El texto procesado es de aprox. N = 2^18 caracteres
 Tiempo de construcción de SuffixTree = 6
+Tiempo promedio de búsqueda: 296.2659251769464
+Largo promedio del patrón: 5.383973710819009
 
 El texto procesado es de aprox. N = 2^19 caracteres
-Tiempo de construcción de SuffixTree = 12
+Tiempo de construcción de SuffixTree = 11
+Tiempo promedio de búsqueda: 254.4004285354172
+Largo promedio del patrón: 5.358331232669523
 
 El texto procesado es de aprox. N = 2^20 caracteres
-Tiempo de construcción de SuffixTree = 15
+Tiempo de construcción de SuffixTree = 13
+Tiempo promedio de búsqueda: 268.31305748978536
+Largo promedio del patrón: 4.763653104678598
 
 El texto procesado es de aprox. N = 2^21 caracteres
-Tiempo de construcción de SuffixTree = 34
+Tiempo de construcción de SuffixTree = 21
+Tiempo promedio de búsqueda: 246.81426092704288
+Largo promedio del patrón: 4.503759398496241
 
 El texto procesado es de aprox. N = 2^22 caracteres
 Tiempo de construcción de SuffixTree = 44
+Tiempo promedio de búsqueda: 245.3911684199227
+Largo promedio del patrón: 4.429261485616144
 
 El texto procesado es de aprox. N = 2^23 caracteres
-Tiempo de construcción de SuffixTree = 85
+Tiempo de construcción de SuffixTree = 93
+Tiempo promedio de búsqueda: 254.88400561509957
+Largo promedio del patrón: 4.369039778057203
 
 El texto procesado es de aprox. N = 2^24 caracteres
-Tiempo de construcción de SuffixTree = 171
+Tiempo de construcción de SuffixTree = 167
+Tiempo promedio de búsqueda: 253.8407826290353
+Largo promedio del patrón: 4.417021094349693
 
 El texto procesado es de aprox. N = 2^25 caracteres
-Tiempo de construcción de SuffixTree = 345
+Tiempo de construcción de SuffixTree = 329
+Tiempo promedio de búsqueda: 261.40457604483515
+Largo promedio del patrón: 4.466606619613402
 

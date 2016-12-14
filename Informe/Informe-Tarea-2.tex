@@ -153,7 +153,6 @@
 
 	\subsection{Tiempo de Creación del Suffix Tree}
 
-% 	// TODO: Mostrar cuanto se tarda en crear un suffix tree, para N = 2 ** 15..21 palabras (aprox).
 	Los resultados para los tiempos de construcción del Suffix Tree usando nuestra implementación son los siguientes:
 
 	\begin{center}
@@ -161,27 +160,27 @@
 			\hline
 			Largo del texto & Tiempo de Construcción (mseg)\\
 			\hline
-			$2^{15}$ & 15\\
+			$2^{15}$ & 5\\
 			\hline
-			$2^{16}$ & 61\\
+			$2^{16}$ & 3\\
 			\hline
-			$2^{17}$ & 109\\
+			$2^{17}$ & 3\\
 			\hline
-			$2^{18}$ & 226\\
+			$2^{18}$ & 6\\
 			\hline
-			$2^{19}$ & 575\\
+			$2^{19}$ & 11\\
 			\hline
-			$2^{20}$ & 1034\\
+			$2^{20}$ & 13\\
 			\hline
-			$2^{21}$ & 2219\\
-% 			\hline
-% 			$2^{22}$ & 34\\
-% 			\hline
-% 			$2^{23}$ & 34\\
-% 			\hline
-% 			$2^{24}$ & 34\\
-% 			\hline
-% 			$2^{25}$ & 34\\
+			$2^{21}$ & 21\\
+			\hline
+			$2^{22}$ & 44\\
+			\hline
+			$2^{23}$ & 93\\
+			\hline
+			$2^{24}$ & 167\\
+			\hline
+			$2^{25}$ & 329\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -198,35 +197,34 @@
 
 	\subsection{Desempeño de operación \textit{Buscar}}
 
-% 	// TODO: Mostrar cuanto se demora en buscar N = (2 ** 15..21) / 10 palabras (aprox).
 	Los resultados para los tiempos de búsqueda en el Suffix Tree son los siguientes:
 
 	\begin{center}
 		\begin{tabular}{|c|c|c|}
 			\hline
-			Número de palabras & Largo promedio del patrón & Tiempo de búsqueda\\
+			Número de palabras & Largo promedio del patrón & Tiempo de búsqueda (nano-segundos)\\
 			\hline
-			$2^{15}$ & X & X\\
+			$2^{15}$ & 5.36 & 2671.75\\
 			\hline
-			$2^{16}$ & X & X\\
+			$2^{16}$ & 5.31 & 1109.40\\
 			\hline
-			$2^{17}$ & X & X\\
+			$2^{17}$ & 5.52 & 259.94\\
 			\hline
-			$2^{18}$ & X & X\\
+			$2^{18}$ & 5.39 & 296.97\\
 			\hline
-			$2^{19}$ & X & X\\
+			$2^{19}$ & 5.35 & 254.40\\
 			\hline
-			$2^{20}$ & X & X\\
+			$2^{20}$ & 4.76 & 268.31\\
 			\hline
-			$2^{21}$ & X & X\\
+			$2^{21}$ & 4.50 & 246.81\\
 			\hline
-			$2^{22}$ & X & X\\
+			$2^{22}$ & 4.43 & 245.39\\
 			\hline
-			$2^{23}$ & X & X\\
+			$2^{23}$ & 4.37 & 254.88\\
 			\hline
-			$2^{24}$ & X & X\\
+			$2^{24}$ & 4.42 & 253.84\\
 			\hline
-			$2^{25}$ & X & X\\
+			$2^{25}$ & 4.47 & 261.40\\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -234,7 +232,7 @@
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{fig2.png}
 
-		Figura 2: Promedio de operaciones por fase
+		Figura 2: Largo promedio del patrón
 	\end{center}
 
 	\begin{center}
@@ -251,47 +249,31 @@
 
 	\subsection{Construcción del Suffix Tree}
 
-% 	// TODO: Elegir versión de la conclusión
-
-	% IF LINEAL
-	Encontramos que el algoritmo de Ukkonen tarda X en N = $2^{15}$ caracteres, y se va duplicando (aproximadamente) cada vez que duplicamos la cantidad de caracteres, por lo que la
-	implementación se consiguió hacer en tiempo $O(n)$.
-
-	% IF INCONSISTENTE
-	Además, nuestra hipótesis de que el \textit{garbage collector} de Java interferiría con nuestros resultados es correcta, dado que cada vez que se corría el algoritmo para una
-	cantidad fija de caracteres variaba notablemente.
-
-	% IF NOT DONE
-	Nuestra implementación tuvo problemas al momento de ejecutarse, dado que no creaba correctamente los nodos internos. De esta forma el arbol se creaba demasiado rápido como para
-	ser coherente con la cantidad de enlaces que deberían existir en el Suffix Tree.
-
-	% IF ONLY WORDS
 	Nuestra implementación funciona bien cuando se usan palabras cortas, dado que es posible construir el Suffix Tree en tiempo $O(n)$ (puesto que al duplicar el largo de la palabra,
 	también se duplicaba el tiempo en nano-segundos para construirlo).
 
+	Nuestra hipótesis de que el \textit{garbage collector} de Java interferiría con nuestros resultados es correcta, dado que cada vez que se corría el algoritmo para una
+	cantidad fija de caracteres variaba notablemente. Aún así, su interferencia es muy baja como para considerarla válida, por lo que solo lo explicamos por motivos de completitud.
+
+	Tomando este caso, encontramos que el algoritmo de Ukkonen tarda (por ejemplo) 5 milisegundos para \\N = $2^{15}$ caracteres, y se va duplicando (aproximadamente) cada vez que duplicamos
+	la cantidad de caracteres, por lo que la implementación parece haber sido conseguida en tiempo $O(n)$.
+
+	A último momento, nos dimos cuenta que nuestra implementación tenía problemas al momento de ejecutarse con textos largos, dado que no creaba correctamente los nodos internos.
+	De esta forma el arbol se creaba demasiado rápido como para ser coherente con la cantidad de enlaces que deberían existir en el Suffix Tree.
+
 	\subsection{Búsqueda en el Suffix Tree}
 
-% 	// TODO: Verificar si los tiempos están acotados o se fueron a la chu*** cada vez que aumentamos el número
+	Encontramos que la búsqueda en el Suffix Tree (respecto a nuestra implementación) cae notablemente, lo que probablemente se debe a que mientras más sufijos se tienen, más sufijos se
+	descartan al momento de buscar la respuesta final. Notar que en nuestra implementación, un \textbf{break} en el código \textit{bypassea} el \textit{loop}, cuando en el \textit{loop}
+	se debería salir solo cuando no quedan más sufijos por procesar.
 
-	% IF TOO MUCH TIME
-	Encontramos a partir de los resultados que la búsqueda se tarda más que la construcción del Suffix Tree. Probablemente se deba a problemas con la consistencia del árbol, dado que
-	se espera que la búsqueda tome tiempo logarítmico respecto a la cantidad de caracteres en el texto.
-
-	% IF GOOD
-	Encontramos que la búsqueda toma tiempo logarítmico respecto a la cantidad de caracteres en el sufijo buscado. Esto se debe a que la estructura de árbol permite acelerar notablemente
-	las búsquedas, además de que el Suffix Tree hace un \textit{tradeoff} entre tiempo y espacio ocupado.
-
-	% IF NOT DONE
-
-	No se logró concluir la implementación de búsqueda dentro del Suffix Tree, dado que la construcción de éste quedó muy inconsistente con el árbol teórico. Se incluye en el código la
-	idea original de la implementación de búsqueda, la cual consistía en % TODO Chamullar la idea de construcción del Suffix Tree
+	En resumen, mientras más sufijos hay, más quedan sin procesar al momento de buscar, por lo que la cantidad de pasadas es menor.
 
 	\subsection{Conclusiones}
 
-	La construcción del Suffix Tree se logra en tiempo lineal ($O(n)$) gracias al algoritmo de Ukkonen, si bien el \textit{garbage collector} de Java interfirió igual, aunque la diferencia
-	es poco perceptible en la linearidad del algoritmo.
-
-	% IF NOT DONE
-	Dado que no se pudo completar la búsqueda dentro del Suffix Tree, tenemos que analizarla teóricamente: % TODO Análisis teórico de búsqueda del Suffix Tree
+	Creemos que el problema en la creación de nodos internos se debe a la creación errónea de los \textit{suffix links} o al seguimiento incorrecto de éstos.
+	Las funciones de conteo están correctas para Suffix Trees bien construídos (i.e. de tamaño pequeño en nuestra implementación), pero pueden mejorarse debido a que se usa recursión para
+	su implementación. Si hubieramos construído correctamente el Suffix Tree con los textos extensos de prueba, probablemente lanzaría un \textit{Stack Overflow}, por lo que en ese caso
+	se cambiaría a una implementación iterativa.
 
 \end{document}

@@ -26,18 +26,6 @@ public class Node {
 		children = new Node[128];
 	}
 
-/*	public int getPath(char s) {
-
-		for (Node node : children) {
-			if (s == (node.firstChar))
-				return start;
-
-		}
-
-
-		return -1;
-	}*/
-
 	public void setLink(Node link) {
 		suffixLink = link;
 	}
