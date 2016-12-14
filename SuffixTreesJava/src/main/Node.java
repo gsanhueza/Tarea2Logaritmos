@@ -1,6 +1,7 @@
 package main;
 
 public class Node {
+	static int count=0;
 	private Node suffixLink;
 	public int start;
 	private Last last;
@@ -17,24 +18,13 @@ public class Node {
 
 	public Node(int start) {
 		setLink(null);
+		count++;
 		this.start = start;
 		last = Last.getInstance();
 		isLeaf = true;
 
 		children = new Node[128];
 	}
-
-/*	public int getPath(char s) {
-
-		for (Node node : children) {
-			if (s == (node.firstChar))
-				return start;
-
-		}
-
-
-		return -1;
-	}*/
 
 	public void setLink(Node link) {
 		suffixLink = link;

@@ -1,8 +1,5 @@
 package main;
 
-/**
- * Created by belisariops on 12/10/16.
- */
 public class Last {
     private static Last ourInstance = new Last();
     public int value;

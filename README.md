@@ -1,9 +1,9 @@
-# Tarea 2 Logaritmos
+# Tarea 2
+
+## Integrantes
+* Rodrigo Delgado
+* Belisario Panay
+* Gabriel Sanhueza
 
 * Escrito en Java
-* Algoritmo de Ukkonen
-
-## TODO
-* Revisar algoritmo
-* Hacer las pruebas 
-
+* SRC de Eclipse
